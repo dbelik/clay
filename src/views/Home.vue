@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2>Admire Stylish <br /> Dresses & Looks</h2>
-    <p>
+    <p class="font-bold">
       If we wanted to build a human-level tool to offer 
       automated outfit advice, we needed to understand 
       people’s fashion taste. 

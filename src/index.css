@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Default tag styles */
+body {
+    color: theme("textColor.black");
+    font-size: theme("fontSize.base");
+    font-family: "Mulish", sans-serif;
+}
+
+h1 { font-size: theme("fontSize.4xl"); }
+h2 { font-size: theme("fontSize.3xl"); }
+h3 { font-size: theme("fontSize.2xl"); }
+h4 { font-size: theme("fontSize.xl"); }
+
+/* Load fonts */
+/* - mulish */
+@font-face {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: normal;
+
+    src: url("/fonts/mulish/regular.ttf");
+}
+@font-face {
+    font-family: "Mulish";
+    font-style: italic;
+    font-weight: normal;
+
+    src: url("/fonts/mulish/italic.ttf");
+}
+@font-face {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: bold;
+
+    src: url("/fonts/mulish/bold.ttf");
+}
+
+/* - playfair */
+@font-face {
+    font-family: "Playfair";
+    font-style: normal;
+    font-weight: normal;
+
+    src: url("/fonts/playfair/regular.ttf");
+}
+@font-face {
+    font-family: "Playfair";
+    font-style: italic;
+    font-weight: normal;
+
+    src: url("/fonts/playfair/italic.ttf");
+}
+@font-face {
+    font-family: "Playfair";
+    font-style: normal;
+    font-weight: bold;
+
+    src: url("/fonts/playfair/bold.ttf");
+}
