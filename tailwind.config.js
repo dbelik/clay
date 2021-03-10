@@ -31,7 +31,21 @@ module.exports = {
       "xl": "20px",
     },
 
-    extend: {},
+    extend: {
+      maxWidth: {
+        content: "1140px"
+      },
+
+      height: {
+        navbar: "64px",
+        icon: "24px"
+      },
+
+      margin: {
+        "16px": "16px",
+        "30px": "30px"
+      }
+    },
   },
   variants: {
     extend: {},
