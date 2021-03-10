@@ -7,12 +7,18 @@ body {
     color: theme("textColor.black");
     font-size: theme("fontSize.base");
     font-family: "Mulish", sans-serif;
+    margin-top: theme("height.navbar");
+    background-color: theme("backgroundColor.grey-100");
 }
+
+h1, h2, h3 { font-family: "Playfair", "sans-serif"; margin-bottom: theme("margin.16px"); }
 
 h1 { font-size: theme("fontSize.4xl"); }
 h2 { font-size: theme("fontSize.3xl"); }
 h3 { font-size: theme("fontSize.2xl"); }
 h4 { font-size: theme("fontSize.xl"); }
+
+p { margin-bottom: theme("margin.16px"); }
 
 /* Load fonts */
 /* - mulish */

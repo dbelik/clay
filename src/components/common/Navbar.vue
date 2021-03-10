@@ -4,10 +4,10 @@
             <img class="h-icon" src="/img/icons/clay.svg" alt="Clay" />
             
             <ul class="flex">
-                <li class="mr-30px"><h3><a href="/">Home</a></h3></li>
-                <li class="mx-30px"><h3><a href="/shop">Shop</a></h3></li>
-                <li class="mx-30px"><h3><a href="/blog">Blog</a></h3></li>
-                <li class="ml-30px"><h3><a href="/contact">Contact</a></h3></li>
+                <li class="mr-30px"><h3 class="m-0"><a href="/">Home</a></h3></li>
+                <li class="mx-30px"><h3 class="m-0"><a href="/shop">Shop</a></h3></li>
+                <li class="mx-30px"><h3 class="m-0"><a href="/blog">Blog</a></h3></li>
+                <li class="ml-30px"><h3 class="m-0"><a href="/contact">Contact</a></h3></li>
             </ul>
 
             <ul class="flex">

@@ -6,14 +6,18 @@ module.exports = {
       black: "#1B2437",
       white: '#FFFFFF',
       pink: "#EDA3B5",
+    },
 
-      grey100: "#EDA3B5",
-      grey200: "#EFEFF4",
-      grey300: "#E5E5EA",
-      grey400: "#D1D1D6",
-      grey500: "#C7C7CC",
-      grey600: "#8E8E93",
-      grey700: "#48484A",
+    backgroundColor: {
+      "grey-100": "#f6f6f6",
+      "grey-200": "#EFEFF4",
+      "grey-300": "#E5E5EA",
+      "grey-400": "#D1D1D6",
+      "grey-500": "#C7C7CC",
+      "grey-600": "#8E8E93",
+      "grey-700": "#48484A",
+      "white": "#ffffff",
+      "pink": "#EDA3B5"
     },
 
     borderRadius: {
@@ -38,12 +42,33 @@ module.exports = {
 
       height: {
         navbar: "64px",
-        icon: "24px"
+        icon: "24px",
+        "102": "27.5rem"
+      },
+
+      minHeight: {
+        section: "540px"
       },
 
       margin: {
         "16px": "16px",
+        "20px": "20px",
         "30px": "30px"
+      },
+
+      padding: {
+        "16px": "16px",
+        "26px": "26px",
+        "32px": "32px"
+      },
+
+      backgroundColor: {
+        brown: "#beb0ad"
+      },
+
+      fontFamily: {
+        playfair: ["Playfair", "sans-serif"],
+        mulish: ["Mulish", "sans-serif"],
       }
     },
   },
