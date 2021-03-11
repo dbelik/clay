@@ -25,7 +25,9 @@ module.exports = {
       "grey-600": "#8E8E93",
       "grey-700": "#48484A",
       "white": "#ffffff",
-      "pink": "#EDA3B5"
+      "pink": "#EDA3B5",
+
+      "transparent-white": "rgba(255, 255, 255, .2)",
     },
 
     borderRadius: {
@@ -35,12 +37,24 @@ module.exports = {
     },
 
     fontSize: {
+      sm: "14px",
       base: "16px",
 
       "4xl": "48px",
       "3xl": "34px",
       "2xl": "24px",
       "xl": "20px",
+    },
+
+    borderColor: {
+      pink: "#EDA3B5",
+      "grey-100": "#f6f6f6",
+      "grey-200": "#EFEFF4",
+      "grey-300": "#E5E5EA",
+      "grey-400": "#D1D1D6",
+      "grey-500": "#C7C7CC",
+      "grey-600": "#8E8E93",
+      "grey-700": "#48484A",
     },
 
     extend: {
@@ -50,6 +64,7 @@ module.exports = {
 
       height: {
         navbar: "64px",
+        "20px": "20px",
         icon: "24px",
         "102": "27.5rem"
       },
@@ -68,9 +83,13 @@ module.exports = {
       },
 
       padding: {
+        "8px": "8px",
+        "11px": "11px",
         "16px": "16px",
+        "22px": "22px",
         "26px": "26px",
         "32px": "32px",
+        "36px": "36px",
         "48px": "48px",
       },
 

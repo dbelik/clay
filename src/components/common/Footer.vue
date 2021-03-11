@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-white mt-32px">
-        <content-container class="flex pt-48px pb-32px">
+        <content-container class="flex py-48px">
             <div class="w-full">
                 <h3 class="mb-24px">Hot links</h3>
                 <ul class="text-grey-600">
@@ -33,9 +33,11 @@
             <div class="w-full">
                 <h3 class="mb-30px">Get newsletter</h3>
                 <p class="mb-30px text-grey-600">Get updates about style</p>
-                <form class="text-grey-600">
-                    <input placeholder="Type your email..." />
-                    <button><img src="" alt="Subscribe" /></button>
+                <form class="text-grey-600 flex">
+                    <default-input class="w-full pr-16" placeholder="Type your email..." />
+                    <pink-fill-btn class="-ml-16">
+                        <img class="h-20px" src="/img/icons/arrow.svg" alt="Subscribe" />
+                    </pink-fill-btn>
                 </form>
             </div>
         </content-container>
@@ -54,10 +56,15 @@
 <script>
 import ContentContainer from "./Container.vue"
 
+import DefaultInput from "../inputs/Default.vue"
+import PinkFillBtn from "../buttons/PinkFill.vue"
+
 export default {
   name: 'Footer',
   components: {
-    ContentContainer
+    ContentContainer,
+    DefaultInput,
+    PinkFillBtn
   }
 }
 </script>

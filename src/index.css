@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 /* Default tag styles */
+::selection {
+    color: theme("textColor.white");
+    background: theme("backgroundColor.pink");
+}
+
 body {
     color: theme("textColor.black");
     font-size: theme("fontSize.base");
@@ -20,6 +25,12 @@ h4 { font-size: theme("fontSize.xl"); }
 
 p { margin-bottom: theme("margin.16px"); }
 
+input:focus { outline: none; }
+
+/* Additional tags */
+.outline-none { outline: none; }
+.border-none { border: none; }
+
 /* Load fonts */
 /* - mulish */
 @font-face {
@@ -35,6 +46,13 @@ p { margin-bottom: theme("margin.16px"); }
     font-weight: normal;
 
     src: url("/fonts/mulish/italic.ttf");
+}
+@font-face {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+
+    src: url("/fonts/mulish/semibold.ttf");
 }
 @font-face {
     font-family: "Mulish";
