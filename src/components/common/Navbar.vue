@@ -4,10 +4,38 @@
             <img class="h-icon" src="/img/icons/clay.svg" alt="Clay" />
             
             <ul class="flex">
-                <li class="mr-30px"><h3 class="m-0"><a href="/">Home</a></h3></li>
-                <li class="mx-30px"><h3 class="m-0"><a href="/shop">Shop</a></h3></li>
-                <li class="mx-30px"><h3 class="m-0"><a href="/blog">Blog</a></h3></li>
-                <li class="ml-30px"><h3 class="m-0"><a href="/contact">Contact</a></h3></li>
+                <li class="mr-30px">
+                    <h3 class="m-0">
+                        <a href="/" class="relative">
+                            <span v-if="this.$route.path === '/'" class="absolute border-t-2 border-black w-full h-1 top-1/2" />
+                            Home
+                        </a>
+                    </h3>
+                </li>
+                <li class="mx-30px">
+                    <h3 class="m-0">
+                        <a href="/shop" class="relative">
+                            <span v-if="this.$route.path === '/shop'" class="absolute border-t-2 border-black w-full h-1 top-1/2" />
+                            Shop
+                        </a>
+                    </h3>
+                </li>
+                <li class="mx-30px">
+                    <h3 class="m-0">
+                        <a href="/blog" class="relative">
+                            <span v-if="this.$route.path === '/blog'" class="absolute border-t-2 border-black w-full h-1 top-1/2" />
+                            Blog
+                        </a>
+                    </h3>
+                </li>
+                <li class="ml-30px">
+                    <h3 class="m-0">
+                        <a href="/contact" class="relative">
+                            <span v-if="this.$route.path === '/contact'" class="absolute border-t-2 border-black w-full h-1 top-1/2" />
+                            Contact
+                        </a>
+                    </h3>
+                </li>
             </ul>
 
             <ul class="flex">
@@ -31,6 +59,6 @@ import ContentContainer from "./Container.vue"
 export default {
     components: {
         ContentContainer
-    }
+    },
 }
 </script>

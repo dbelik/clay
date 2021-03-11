@@ -4,29 +4,29 @@
             <div class="w-full">
                 <h3 class="mb-24px">Hot links</h3>
                 <ul class="text-grey-600">
-                    <li class="mb-12px"><a>Home</a></li>
-                    <li class="mb-12px"><a>Shop</a></li>
-                    <li class="mb-12px"><a>Blog</a></li>
-                    <li><a>Contact</a></li>
+                    <li class="mb-12px"><a href="/">Home</a></li>
+                    <li class="mb-12px"><a href="/">Shop</a></li>
+                    <li class="mb-12px"><a href="/">Blog</a></li>
+                    <li><a href="/">Contact</a></li>
                 </ul>
             </div>
 
             <div class="w-full">
                 <h3 class="mb-24px">More info</h3>
                 <ul class="text-grey-600">
-                    <li class="mb-12px"><a>How it works</a></li>
-                    <li class="mb-12px"><a>About us</a></li>
-                    <li class="mb-12px"><a>Decline rules</a></li>
-                    <li><a>Terms & Conditions</a></li>
+                    <li class="mb-12px"><a href="/">How it works</a></li>
+                    <li class="mb-12px"><a href="/">About us</a></li>
+                    <li class="mb-12px"><a href="/">Decline rules</a></li>
+                    <li><a href="/">Terms & Conditions</a></li>
                 </ul>
             </div>
 
             <div class="w-full">
                 <h3 class="mb-24px">Customer care</h3>
                 <ul class="text-grey-600">
-                    <li class="mb-12px"><a>FAQ</a></li>
-                    <li class="mb-12px"><a>Terms of use</a></li>
-                    <li><a>Privacy Policy</a></li>
+                    <li class="mb-12px"><a href="/">FAQ</a></li>
+                    <li class="mb-12px"><a href="/">Terms of use</a></li>
+                    <li><a href="/">Privacy Policy</a></li>
                 </ul>
             </div>
 
@@ -34,7 +34,7 @@
                 <h3 class="mb-30px">Get newsletter</h3>
                 <p class="mb-30px text-grey-600">Get updates about style</p>
                 <form class="text-grey-600 flex">
-                    <default-input class="w-full pr-16" placeholder="Type your email..." />
+                    <default-input type="email" class="w-full pr-16" placeholder="Type your email..." />
                     <pink-fill-btn class="-ml-16">
                         <img class="h-20px" src="/img/icons/arrow.svg" alt="Subscribe" />
                     </pink-fill-btn>
