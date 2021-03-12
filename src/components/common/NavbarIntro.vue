@@ -7,20 +7,20 @@
             </div>
             
             <ul class="flex items-center justify-center">
-                <li class="mr-48px">
+                <li class="mr-48px flex items-center">
                     <a class="inline-block" href="/"><img src="/img/icons/socials/instagram.svg" alt="Instagram" /></a>
                 </li>
-                <li class="mr-48px">
+                <li class="mr-48px flex items-center">
                     <a class="inline-block" href="/"><img src="/img/icons/socials/twitter.svg" alt="Twitter" /></a>
                 </li>
-                <li>
+                <li class="flex items-center">
                     <a class="inline-block" href="/"><img src="/img/icons/socials/facebook.svg" alt="Facebook" /></a>
                 </li>
             </ul>
 
             <ul class="flex">
                 <li class="mr-16px">
-                    <button><img class="h-icon" src="/img/icons/search.svg" alt="Search" /></button>
+                    <button class="flex items-center"><img class="h-icon" src="/img/icons/search.svg" alt="Search" /></button>
                 </li>
                 <li class="mx-16px">
                     <router-link to="/"><img class="h-icon" src="/img/icons/user.svg" alt="Profile" /></router-link>

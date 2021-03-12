@@ -28,6 +28,7 @@ module.exports = {
       "pink": "#EDA3B5",
 
       "transparent-white": "rgba(255, 255, 255, .2)",
+      transparent: "transparent"
     },
 
     borderRadius: {
@@ -55,6 +56,7 @@ module.exports = {
       "grey-500": "#C7C7CC",
       "grey-600": "#8E8E93",
       "grey-700": "#48484A",
+      "transparent-white": "rgba(255, 255, 255, .4)",
     },
 
     extend: {
