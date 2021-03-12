@@ -47,10 +47,12 @@ export default {
       },
 
       interactStart(event) {
-        gsap.to(event.target, { backgroundColor: "#F6F6F6", fontWeight: "bold", color: "#EDA3B5", duration: .2 });
+        gsap.to(event.target, { backgroundColor: "#F6F6F6", duration: .2 });
+        gsap.to(event.target, { fontWeight: "bold", color: "#EDA3B5", duration: 0 });
       },
       interactStop(event) {
-        gsap.to(event.target, { backgroundColor: "#ffffff", fontWeight: "normal", color: "#1B2437", duration: .2 });
+        gsap.to(event.target, { backgroundColor: "#ffffff", duration: .2 });
+        gsap.to(event.target, { fontWeight: "normal", color: "#1B2437", duration: 0 });
       }
     },
 }

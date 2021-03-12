@@ -57,6 +57,7 @@ module.exports = {
       "grey-600": "#8E8E93",
       "grey-700": "#48484A",
       "transparent-white": "rgba(255, 255, 255, .4)",
+      'transparent': 'transparent'
     },
 
     extend: {
@@ -70,6 +71,7 @@ module.exports = {
 
       width: {
         "42": "10.5rem",
+        "2xfull": "200%",
       },
 
       height: {

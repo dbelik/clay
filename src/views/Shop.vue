@@ -1,6 +1,6 @@
 <template>
   <content-container>
-    <ul class="flex pt-24px pb-40px">
+    <ul class="flex items-end justify-between pt-24px pb-40px">
       <li class="flex flex-col w-42 mr-24px">
         <label class="mb-8px">Show</label>
         <default-dropdown class="w-full" :items="show"></default-dropdown>
@@ -19,8 +19,9 @@
       <li>
         <label>Size Guide</label>
       </li>
-      <li>
-        <label>Color</label>
+      <li class="flex flex-col">
+        <label class="mb-12px">Color</label>
+        <colors-dropdown :items="colors"></colors-dropdown>
       </li>
       <li>
         <alignment-checkbox />
@@ -95,6 +96,7 @@
 <script>
 import ContentContainer from "../components/common/Container.vue"
 import DefaultDropdown from "../components/dropdowns/Default.vue"
+import ColorsDropdown from "../components/dropdowns/Colors.vue"
 
 import AlignmentCheckbox from "../components/checkboxes/Alignment.vue"
 
@@ -113,13 +115,20 @@ export default {
     PinkFillInteractLink,
     ShiftBackgroundLink,
     PinkFillLink,
-    AlignmentCheckbox
+    AlignmentCheckbox,
+    ColorsDropdown
   },
   data() {
     return {
       show: ["Popular", "Collection"],
       price: ["Low", "High"],
       brand: ["Gucci", "Adidas"],
+      colors: [
+        "rgb(27, 36, 55)", "rgb(18, 118, 129)", "rgb(50, 224, 196)", 
+        'rgb(243, 198, 35)', 'rgb(245, 66, 145)', 'rgb(255, 211, 225)', 
+        'rgb(39, 73, 109)', 'rgb(82, 45, 91)',
+        "rgb(92, 42, 157)", "rgb(125, 90, 90)", "rgb(192, 96, 161)"
+      ]
     }
   }
 }
