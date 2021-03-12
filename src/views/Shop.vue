@@ -1,15 +1,15 @@
 <template>
   <content-container>
     <ul class="flex items-end justify-center pt-24px pb-40px flex-wrap xl:justify-between">
-      <li class="flex flex-col w-42 mr-24px">
+      <li class="flex flex-col w-42 mb-12px xs:mb-0 xs:mr-24px">
         <label class="mb-8px">Show</label>
         <default-dropdown class="w-full" :items="show"></default-dropdown>
       </li>
-      <li class="flex flex-col w-42 mr-24px">
+      <li class="flex flex-col w-42 mb-12px xs:mb-0 xs:mr-24px">
         <label class="mb-8px">Price</label>
         <default-dropdown class="w-full" :items="price"></default-dropdown>
       </li>
-      <li class="flex flex-col w-42">
+      <li class="flex flex-col w-42 mb-12px xs:mb-0">
         <label class="mb-8px">Brand</label>
         <default-dropdown class="w-full" :items="brand"></default-dropdown>
       </li>
@@ -37,60 +37,61 @@
         price="1 140"
         title="Women's costume Yves Saint Laurent"
         description="Fashion is something we deal with everyday. Even people who say t…"
-        class="m-8px w-88" />
+        class="m-0 mb-16px xs:m-8px w-88" />
         
       <card 
         background="url(/img/shop/mens_black_hat.png)" 
         price=540
         title="Men’s black hat Gucci"
         description="The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de..."
-        class="m-8px w-88" />
+        class="m-0 mb-16px xs:m-8px w-88" />
         
       <card 
         background="url(/img/shop/dress_karl.png)" 
         price=640
         title="Dress Karl Lagerfeld"
         description="Another masterpiece from the legendary designer. He designed new dress dev…"
-        class="m-8px w-88" />
+        class="m-0 mb-16px xs:m-8px w-88" />
         
       <card 
         background="url(/img/shop/mens_black_tie.jpg)" 
         price=225
         title="Men’s black tie Valentino"
         description="Jacquard Valentino tie with Valentino logo motif."
-        class="m-8px w-88" />
+        class="m-0 mb-16px xs:m-8px w-88" />
         
       <card 
         background="url(/img/shop/mens_jacket.jpg)" 
         price=215
         title="Men’s jacket Off- white"
         description="Off-White scuffed denim jacket. Faded effect, baggy cut, pointed collar, clasp…"
-        class="m-8px w-88" />
+        class="m-0 mb-16px xs:m-8px w-88" />
         
       <card 
         background="url(/img/shop/cotton_blouse.jpg)" 
         price=180
         title="Cotton blouse Dries van noten"
         description="The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de..."
-        class="w-88 m-8px" />
+        class="w-88 m-0 mb-16px xs:m-8px" />
     </content-container>
   </div>
 
-  <content-container class="flex items-center justify-between mt-48px mb-16px">
-    <shift-background-link class="h-8 w-8" backgroundImage="url(/img/shop/arrow-left.svg);" to="/" positionStart="-32px 0px" positionStop="0px 0px"></shift-background-link>
+  <content-container class="flex items-center justify-center sm:justify-between mt-48px mb-16px">
+    <shift-background-link class="h-8 w-8 hidden sm:block" backgroundImage="url(/img/shop/arrow-left.svg);" to="/" positionStart="-32px 0px" positionStop="0px 0px"></shift-background-link>
     <ul class="flex items-center justify-center">
       <li><pink-fill-interact-link to="/">1</pink-fill-interact-link></li>
-      <li><pink-fill-interact-link to="/">2</pink-fill-interact-link></li>
+      <li class="hidden md:block"><pink-fill-interact-link to="/">2</pink-fill-interact-link></li>
+      <li class="text-xl block md:hidden">...</li>
       <li><pink-fill-interact-link to="/">3</pink-fill-interact-link></li>
       <li><pink-fill-link to="/">4</pink-fill-link></li>
       <li><pink-fill-interact-link to="/">5</pink-fill-interact-link></li>
-      <li><pink-fill-interact-link to="/">6</pink-fill-interact-link></li>
-      <li><pink-fill-interact-link to="/">7</pink-fill-interact-link></li>
-      <li><pink-fill-interact-link to="/">8</pink-fill-interact-link></li>
+      <li class="hidden md:block"><pink-fill-interact-link to="/">6</pink-fill-interact-link></li>
+      <li class="hidden md:block"><pink-fill-interact-link to="/">7</pink-fill-interact-link></li>
+      <li class="hidden md:block"><pink-fill-interact-link to="/">8</pink-fill-interact-link></li>
       <li class="text-xl">...</li>
       <li><pink-fill-interact-link to="/">231</pink-fill-interact-link></li>
     </ul>
-    <shift-background-link class="h-8 w-8" backgroundImage="url(/img/shop/arrow-right.svg);" to="/" positionStart="32px 0px" positionStop="0px 0px"></shift-background-link>
+    <shift-background-link class="h-8 w-8 hidden sm:block" backgroundImage="url(/img/shop/arrow-right.svg);" to="/" positionStart="32px 0px" positionStop="0px 0px"></shift-background-link>
   </content-container>
 </template>
 

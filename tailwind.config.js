@@ -127,6 +127,10 @@ module.exports = {
       fontFamily: {
         playfair: ["Playfair", "sans-serif"],
         mulish: ["Mulish", "sans-serif"],
+      },
+
+      screens: {
+        'xs': "480px"
       }
     },
   },
