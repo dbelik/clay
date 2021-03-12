@@ -42,7 +42,7 @@ export default {
       },
       chooseElem(event) {
         if (this.selectedElem === event.target) return;
-
+        this.active = false;
         this.selectedElem = event.target;
       },
 
