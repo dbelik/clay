@@ -23,7 +23,7 @@
         <label>Color</label>
       </li>
       <li>
-
+        <alignment-checkbox />
       </li>
     </ul>
   </content-container>
@@ -96,6 +96,8 @@
 import ContentContainer from "../components/common/Container.vue"
 import DefaultDropdown from "../components/dropdowns/Default.vue"
 
+import AlignmentCheckbox from "../components/checkboxes/Alignment.vue"
+
 import PinkFillInteractLink from "../components/links/PinkFillInteract.vue"
 import PinkFillLink from "../components/links/PinkFill.vue"
 import ShiftBackgroundLink from "../components/links/ShiftBackground.vue"
@@ -110,7 +112,8 @@ export default {
     DefaultDropdown,
     PinkFillInteractLink,
     ShiftBackgroundLink,
-    PinkFillLink
+    PinkFillLink,
+    AlignmentCheckbox
   },
   data() {
     return {
