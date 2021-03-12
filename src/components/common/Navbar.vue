@@ -35,7 +35,7 @@
         </content-container>
 
         <content-container class="h-0 overflow-hidden">
-            <input class="text-4xl" placeholder="Search" />
+            <input class="text-4xl" placeholder="Search" style="caret-color: #EDA3B5;" />
         </content-container>
     </nav>
 </template>
