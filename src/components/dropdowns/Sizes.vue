@@ -4,10 +4,11 @@
             <button 
                 v-for="item in items.slice(0, 3)" :key="item" 
                 @click="chooseElem" 
-                class="inline-block relative rounded-sm mx-1 z-20 w-8 h-8 flex items-center justify-center border-2" 
-                :style="`border-color: ${!selectedElem && items[0] === item || selectedElem && selectedElem.children[0].style.backgroundColor === item ? item : 'transparent'}`"
+                :class="`inline-block relative rounded-md mx-1 z-20 w-8 h-10 flex items-center justify-center border-2 w-16 w-11 ${
+                    !selectedElem && items[0] === item || selectedElem && selectedElem.innerText === item ? 'bg-pink text-white border-pink' : 'bg-transparent border-grey-300'
+                }`" 
             >
-                <span class="inline-block w-6 h-6 rounded-sm" :style="`background-color: ${item};`"></span>
+                {{ item }}
             </button>
 
             <button @click="toggle">
@@ -17,16 +18,17 @@
             </button>
         </div>
 
-        <div v-if="active" class="origin-top-left absolute mt-1 w-2xfull left-0 rounded-md bg-white focus:outline-none overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+        <div v-if="active" class="origin-top-left absolute mt-1 rounded-md bg-white focus:outline-none overflow-hidden p-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu" style="width: calc(100% - 16px); left: -4px;">
             <div class="flex flex-wrap">
                 <button
                     v-for="item in items.slice(3)" 
                     :key="item" 
                     @click="chooseElem" 
-                    class="block relative rounded-sm m-1 z-20 w-8 h-8 flex items-center justify-center border-2" 
-                    :style="`border-color: ${selectedElem && selectedElem.children[0].style.backgroundColor === item ? item : 'transparent'}`"
+                    :class="`block relative rounded-md m-1 z-20 w-8 h-8 flex items-center justify-center border-2 w-16 w-11 ${
+                        !selectedElem && items[0] === item || selectedElem && selectedElem.innerText === item ? 'bg-pink text-white border-pink' : 'bg-transparent border-grey-300'
+                    }`"
                 >
-                    <span class="inline-block w-6 h-6 rounded-sm" :style="`background-color: ${item};`"></span>
+                    {{ item }}
                 </button>
             </div>
         </div>

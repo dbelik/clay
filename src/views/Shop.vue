@@ -14,16 +14,17 @@
         <default-dropdown class="w-full" :items="brand"></default-dropdown>
       </li>
       <li>
-        <label>Size</label>
+        <div class="flex justify-between pr-8 pl-1 mb-8px">
+          <label>Size</label>
+          <label><router-link to="/" class="text-pink font-bold">Size Guide</router-link></label>
+        </div>
+        <sizes-dropdown :items="sizes" />
       </li>
-      <li>
-        <label>Size Guide</label>
-      </li>
-      <li class="flex flex-col">
+      <li class="flex flex-col ml-2 mb-1">
         <label class="mb-12px">Color</label>
-        <colors-dropdown :items="colors"></colors-dropdown>
+        <colors-dropdown :items="colors" />
       </li>
-      <li>
+      <li class="ml-12 mb-1">
         <alignment-checkbox />
       </li>
     </ul>
@@ -97,6 +98,7 @@
 import ContentContainer from "../components/common/Container.vue"
 import DefaultDropdown from "../components/dropdowns/Default.vue"
 import ColorsDropdown from "../components/dropdowns/Colors.vue"
+import SizesDropdown from "../components/dropdowns/Sizes.vue"
 
 import AlignmentCheckbox from "../components/checkboxes/Alignment.vue"
 
@@ -116,7 +118,8 @@ export default {
     ShiftBackgroundLink,
     PinkFillLink,
     AlignmentCheckbox,
-    ColorsDropdown
+    ColorsDropdown,
+    SizesDropdown
   },
   data() {
     return {
@@ -128,7 +131,8 @@ export default {
         'rgb(243, 198, 35)', 'rgb(245, 66, 145)', 'rgb(255, 211, 225)', 
         'rgb(39, 73, 109)', 'rgb(82, 45, 91)',
         "rgb(92, 42, 157)", "rgb(125, 90, 90)", "rgb(192, 96, 161)"
-      ]
+      ],
+      sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
     }
   }
 }
