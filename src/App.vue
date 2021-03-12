@@ -9,7 +9,8 @@
       </transition>
     </main>
 
-    <Footer />
+    <FooterIntro v-if="this.$route.path === '/'" />
+    <Footer v-else />
   </div>
 </template>
 
@@ -17,12 +18,14 @@
 import Navbar from './components/common/Navbar.vue'
 import NavbarIntro from './components/common/NavbarIntro.vue'
 import Footer from './components/common/Footer.vue'
+import FooterIntro from './components/common/FooterIntro.vue'
 
 export default {
   components: {
     Navbar,
     Footer,
-    NavbarIntro
+    NavbarIntro,
+    FooterIntro
   }
 }
 </script>

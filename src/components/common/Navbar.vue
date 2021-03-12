@@ -3,40 +3,7 @@
         <content-container class="flex items-center justify-between h-navbar">
             <img class="h-icon" src="/img/icons/clay.svg" alt="Clay" />
             
-            <ul class="flex">
-                <li class="mr-30px">
-                    <h3 class="m-0">
-                        <router-link to="/" class="relative">
-                            <span v-if="this.$route.path === '/'" class="absolute border-t border-black w-full h-1 top-1/2" />
-                            Home
-                        </router-link>
-                    </h3>
-                </li>
-                <li class="mx-30px">
-                    <h3 class="m-0">
-                        <router-link to="/shop" class="relative">
-                            <span v-if="this.$route.path === '/shop'" class="absolute border-t border-black w-full h-1 top-1/2" />
-                            Shop
-                        </router-link>
-                    </h3>
-                </li>
-                <li class="mx-30px">
-                    <h3 class="m-0">
-                        <router-link to="/blog" class="relative">
-                            <span v-if="this.$route.path === '/blog'" class="absolute border-t border-black w-full h-1 top-1/2" />
-                            Blog
-                        </router-link>
-                    </h3>
-                </li>
-                <li class="ml-30px">
-                    <h3 class="m-0">
-                        <router-link to="/contact" class="relative">
-                            <span v-if="this.$route.path === '/contact'" class="absolute border-t border-black w-full h-1 top-1/2" />
-                            Contact
-                        </router-link>
-                    </h3>
-                </li>
-            </ul>
+            <NavLinks spacing="24" />
 
             <ul class="flex">
                 <li class="mr-16px">
@@ -55,10 +22,12 @@
 
 <script>
 import ContentContainer from "./Container.vue"
+import NavLinks from "./NavLinks.vue"
 
 export default {
     components: {
-        ContentContainer
+        ContentContainer,
+        NavLinks
     },
 }
 </script>
