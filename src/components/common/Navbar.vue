@@ -24,7 +24,7 @@
                     <router-link to="/"><img class="h-icon" src="/img/icons/cart.svg" alt="Cart" /></router-link>
                 </li>
                 <li class="absolute right-0 opacity-0 hidden">
-                    <button>
+                    <button @click="closeSearch">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.34314 6.34314L17.6568 17.6568" stroke="#EDA3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M17.6568 6.34314L6.34314 17.6568" stroke="#EDA3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -78,6 +78,34 @@ export default {
             gsap.to(input, { height: "90px", duration: .4, delay: .8 });
             gsap.to(cancel, { display: "block", duration: 0, delay: .8 });
             gsap.to(cancel, { opacity: 1, duration: .4, delay: .8 });
+        },
+
+        closeSearch(event) {
+            const button = event.currentTarget;
+            const searchTitle = button.parentNode.parentNode.children[0].children[1];
+            const nav = button.parentNode.parentNode.parentNode;
+            const logo = button.parentNode.parentNode.parentNode.children[0];
+            const logoPath = button.parentNode.parentNode.parentNode.children[0].children[0];
+            const item1 = button.parentNode.parentNode.children[1];
+            const item2 = button.parentNode.parentNode.children[2];
+            const items = button.parentNode.parentNode;
+            const navlinks = button.parentNode.parentNode.parentNode.children[1];
+            const input = button.parentNode.parentNode.parentNode.parentNode.children[1];
+            const cancel = button.parentNode.parentNode.children[3];
+
+            gsap.to(items, { width: "11rem", duration: .4, delay: .4 });
+            gsap.to(navlinks, { width: "100%", duration: .4, delay: .4, margin: "5rem" });
+            gsap.to(logo, { width: "22px", duration: .4, delay: .4 });
+            gsap.to(searchTitle, { marginLeft: "0", duration: 0 });
+            gsap.to(searchTitle, { width: "0px", height: "0px", duration: .4 });
+            gsap.to(input, { height: "0", duration: .4 });
+            gsap.to(cancel, { opacity: 0, duration: .4 });
+            gsap.to(cancel, { display: "none", duration: 0, delay: .4 });
+
+            gsap.to(nav, { color: "#1B2437", duration: .2, delay: .8 });
+            gsap.to(logoPath, { opacity: 1, duration: .2, delay: .8 });
+            gsap.to(item1, { opacity: 1, duration: .2, delay: .8 });
+            gsap.to(item2, { opacity: 1, duration: .2, delay: .8 });
         }
     }
 }
