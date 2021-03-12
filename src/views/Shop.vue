@@ -37,42 +37,42 @@
         price="1 140"
         title="Women's costume Yves Saint Laurent"
         description="Fashion is something we deal with everyday. Even people who say t…"
-        class="m-12px w-88" />
+        class="m-8px w-88" />
         
       <card 
         background="url(/img/shop/mens_black_hat.png)" 
         price=540
         title="Men’s black hat Gucci"
         description="The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de..."
-        class="m-12px w-88" />
+        class="m-8px w-88" />
         
       <card 
         background="url(/img/shop/dress_karl.png)" 
         price=640
         title="Dress Karl Lagerfeld"
         description="Another masterpiece from the legendary designer. He designed new dress dev…"
-        class="m-12px w-88" />
+        class="m-8px w-88" />
         
       <card 
         background="url(/img/shop/mens_black_tie.jpg)" 
         price=225
         title="Men’s black tie Valentino"
         description="Jacquard Valentino tie with Valentino logo motif."
-        class="m-12px w-88" />
+        class="m-8px w-88" />
         
       <card 
         background="url(/img/shop/mens_jacket.jpg)" 
         price=215
         title="Men’s jacket Off- white"
         description="Off-White scuffed denim jacket. Faded effect, baggy cut, pointed collar, clasp…"
-        class="m-12px w-88" />
+        class="m-8px w-88" />
         
       <card 
         background="url(/img/shop/cotton_blouse.jpg)" 
         price=180
         title="Cotton blouse Dries van noten"
         description="The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de..."
-        class="w-88 m-12px" />
+        class="w-88 m-8px" />
     </content-container>
   </div>
 
