@@ -4,29 +4,29 @@
             <div class="w-full">
                 <h3 class="mb-24px">Hot links</h3>
                 <ul class="text-grey-600">
-                    <li class="mb-12px"><a href="/">Home</a></li>
-                    <li class="mb-12px"><a href="/">Shop</a></li>
-                    <li class="mb-12px"><a href="/">Blog</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li class="mb-8px"><text-link to="/">Home</text-link></li>
+                    <li class="mb-8px"><text-link to="/">Shop</text-link></li>
+                    <li class="mb-8px"><text-link to="/">Blog</text-link></li>
+                    <li><text-link to="/">Contact</text-link></li>
                 </ul>
             </div>
 
             <div class="w-full">
                 <h3 class="mb-24px">More info</h3>
                 <ul class="text-grey-600">
-                    <li class="mb-12px"><a href="/">How it works</a></li>
-                    <li class="mb-12px"><a href="/">About us</a></li>
-                    <li class="mb-12px"><a href="/">Decline rules</a></li>
-                    <li><a href="/">Terms & Conditions</a></li>
+                    <li class="mb-8px"><text-link to="/">How it works</text-link></li>
+                    <li class="mb-8px"><text-link to="/">About us</text-link></li>
+                    <li class="mb-8px"><text-link to="/">Decline rules</text-link></li>
+                    <li><text-link to="/">Terms & Conditions</text-link></li>
                 </ul>
             </div>
 
             <div class="w-full">
                 <h3 class="mb-24px">Customer care</h3>
                 <ul class="text-grey-600">
-                    <li class="mb-12px"><a href="/">FAQ</a></li>
-                    <li class="mb-12px"><a href="/">Terms of use</a></li>
-                    <li><a href="/">Privacy Policy</a></li>
+                    <li class="mb-8px"><text-link to="/">FAQ</text-link></li>
+                    <li class="mb-8px"><text-link to="/">Terms of use</text-link></li>
+                    <li><text-link to="/">Privacy Policy</text-link></li>
                 </ul>
             </div>
 
@@ -57,6 +57,7 @@
 import ContentContainer from "./Container.vue"
 
 import DefaultInput from "../inputs/Default.vue"
+import TextLink from "../links/Text.vue"
 import PinkFillBtn from "../buttons/PinkFill.vue"
 
 export default {
@@ -64,7 +65,8 @@ export default {
   components: {
     ContentContainer,
     DefaultInput,
-    PinkFillBtn
+    PinkFillBtn,
+    TextLink
   }
 }
 </script>

@@ -74,16 +74,31 @@
     </content-container>
   </div>
 
-  <div></div>
+  <content-container class="flex items-center justify-between mt-48px mb-16px">
+    <shift-background-link class="h-8 w-8" backgroundImage="url(/img/shop/arrow-left.svg);" to="/" positionStart="-32px 0px" positionStop="0px 0px"></shift-background-link>
+    <ul class="flex items-center justify-center">
+      <li><pink-fill-interact-link to="/">1</pink-fill-interact-link></li>
+      <li><pink-fill-interact-link to="/">2</pink-fill-interact-link></li>
+      <li><pink-fill-interact-link to="/">3</pink-fill-interact-link></li>
+      <li><pink-fill-link to="/">4</pink-fill-link></li>
+      <li><pink-fill-interact-link to="/">5</pink-fill-interact-link></li>
+      <li><pink-fill-interact-link to="/">6</pink-fill-interact-link></li>
+      <li><pink-fill-interact-link to="/">7</pink-fill-interact-link></li>
+      <li><pink-fill-interact-link to="/">8</pink-fill-interact-link></li>
+      <li class="text-xl">...</li>
+      <li><pink-fill-interact-link to="/">231</pink-fill-interact-link></li>
+    </ul>
+    <shift-background-link class="h-8 w-8" backgroundImage="url(/img/shop/arrow-right.svg);" to="/" positionStart="32px 0px" positionStop="0px 0px"></shift-background-link>
+  </content-container>
 </template>
 
 <script>
 import ContentContainer from "../components/common/Container.vue"
 import DefaultDropdown from "../components/dropdowns/Default.vue"
 
-// import WhiteBorderLink from "../components/links/WhiteBorder.vue"
-// import PinkBorderLink from "../components/links/PinkBorder.vue"
-// import WhiteFillLink from "../components/links/WhiteFill.vue"
+import PinkFillInteractLink from "../components/links/PinkFillInteract.vue"
+import PinkFillLink from "../components/links/PinkFill.vue"
+import ShiftBackgroundLink from "../components/links/ShiftBackground.vue"
 
 import Card from '../components/common/Card.vue'
 
@@ -92,10 +107,10 @@ export default {
   components: {
     Card,
     ContentContainer,
-    DefaultDropdown
-    // WhiteBorderLink,
-    // PinkBorderLink,
-    // WhiteFillLink,
+    DefaultDropdown,
+    PinkFillInteractLink,
+    ShiftBackgroundLink,
+    PinkFillLink
   },
   data() {
     return {
