@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-white mt-32px">
+    <footer class="bg-white mt-44px">
         <div class="flex items-center justify-center py-24px border-b border-grey-200"><NavLinks spacing="44" /></div>
         <content-container class="flex py-48px">
             <div class="w-2/5">

@@ -62,37 +62,21 @@
       <h2>You may like</h2>
 
       <div class="flex items-center justify-between">
-        <div class="w-full rounded-lg overflow-hidden">
-          <div class="h-72 bg-cover bg-center bg-no-repeat" style="background-image: url(/img/home/black_gucci.png);"></div>
-          <div class="h-72 bg-white p-32px flex flex-col items-between">
-            <h2 class="w-4/5 h-full">Women's black vest Gucci</h2>
-            <div class="flex items-center justify-between">
-              <h2 class="m-0"><span class="text-2xl">$</span> 715</h2>
-              <pink-border-link to="/">Shop now</pink-border-link>
-            </div>
-          </div>
-        </div>
-        <div class="ml-16px w-full rounded-lg overflow-hidden">
-          <div class="h-72 bg-cover bg-center bg-no-repeat" style="background-image: url(/img/home/red_dress.png);"></div>
-          <div class="h-72 bg-white p-32px flex flex-col items-between">
-            <h2 class="w-4/5 h-full">Red dress Valentino</h2>
-            <div class="flex items-center justify-between">
-              <h2 class="m-0"><span class="text-2xl">$</span> 1610</h2>
-              <pink-border-link to="/">Shop now</pink-border-link>
-            </div>
-          </div>
-
-        </div>
-        <div class="ml-16px w-full rounded-lg overflow-hidden">
-          <div class="h-72 bg-cover bg-center bg-no-repeat" style="background-image: url(/img/home/shiny_dress.png);"></div>
-          <div class="h-72 bg-white p-32px flex flex-col items-between">
-            <h2 class="w-4/5 h-full">Shiny dress Givenchy</h2>
-            <div class="flex items-center justify-between">
-              <h2 class="m-0"><span class="text-2xl">$</span> 540</h2>
-              <pink-border-link to="/">Shop now</pink-border-link>
-            </div>
-          </div>
-        </div>
+        <card 
+          background="url(/img/home/black_gucci.png)" 
+          price=715
+          title="Women's black vest Gucci"
+          class="mr-24px" style="width: calc(33% - 48px/3)" />
+        <card 
+          background="url(/img/home/red_dress.png)" 
+          price=1610
+          title="Red dress Valentino"
+          class="mr-24px" style="width: calc(33% - 48px/3)" />
+        <card 
+          background="url(/img/home/shiny_dress.png)" 
+          price=540
+          title="Shiny dress Givenchy"
+          style="width: calc(33% - 48px/3)" />
       </div>
     </content-container>
   </section>
@@ -105,16 +89,17 @@
 import ContentContainer from "../components/common/Container.vue"
 
 import WhiteBorderLink from "../components/links/WhiteBorder.vue"
-import PinkBorderLink from "../components/links/PinkBorder.vue"
 import WhiteFillLink from "../components/links/WhiteFill.vue"
+
+import Card from '../components/common/Card.vue'
 
 export default {
   name: 'Home',
   components: {
     ContentContainer,
     WhiteBorderLink,
-    PinkBorderLink,
     WhiteFillLink,
+    Card
     // Carousel,
     // Slide,
     // Pagination,
