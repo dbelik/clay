@@ -32,6 +32,11 @@ button { font-family: "Mulish", sans-serif; }
 .outline-none { outline: none; }
 .border-none { border: none; }
 
+/* Responsive overrides */
+@media (max-width: 1200px) {
+    h2 { font-size: 28px; }
+ }
+
 /* Load fonts */
 /* - mulish */
 @font-face {

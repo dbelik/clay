@@ -1,7 +1,7 @@
 <template>
     <footer class="bg-white mt-32px">
-        <content-container class="flex py-48px">
-            <div class="w-full">
+        <content-container class="flex flex-wrap justify-center align-center py-48px text-center sm:text-left">
+            <div class="w-full sm:w-1/2 md:w-1/3 mb-48px lg:mb-0 lg:w-1/4">
                 <h3 class="mb-24px">Hot links</h3>
                 <ul class="text-grey-600">
                     <li class="mb-8px"><text-link to="/">Home</text-link></li>
@@ -11,7 +11,7 @@
                 </ul>
             </div>
 
-            <div class="w-full">
+            <div class="w-full sm:w-1/2 md:w-1/3 mb-48px lg:mb-0 lg:w-1/4">
                 <h3 class="mb-24px">More info</h3>
                 <ul class="text-grey-600">
                     <li class="mb-8px"><text-link to="/">How it works</text-link></li>
@@ -21,7 +21,7 @@
                 </ul>
             </div>
 
-            <div class="w-full">
+            <div class="w-full sm:w-1/2 mb-48px lg:mb-0 md:w-1/3 lg:w-1/4">
                 <h3 class="mb-24px">Customer care</h3>
                 <ul class="text-grey-600">
                     <li class="mb-8px"><text-link to="/">FAQ</text-link></li>
@@ -30,11 +30,11 @@
                 </ul>
             </div>
 
-            <div class="w-full">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
                 <h3 class="mb-30px">Get newsletter</h3>
                 <p class="mb-30px text-grey-600">Get updates about style</p>
-                <form class="text-grey-600 flex">
-                    <default-input type="email" class="w-full pr-16" placeholder="Type your email..." />
+                <form class="text-grey-600 flex justify-center sm:justify-start">
+                    <default-input type="email" class="w-full pr-16 max-w-xs" placeholder="Type your email..." />
                     <pink-fill-btn class="-ml-16">
                         <img class="h-20px" src="/img/icons/arrow.svg" alt="Subscribe" />
                     </pink-fill-btn>

@@ -10,7 +10,7 @@
             </button>
         </div>
 
-        <div v-if="active" class="origin-top-left absolute left-0 w-full rounded-md bg-white focus:outline-none overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+        <div v-if="active" class="origin-top-left absolute left-0 w-full rounded-md bg-white focus:outline-none overflow-hidden z-30" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             <div class="py-1" role="none">
                 <button v-for="item in items" :key="item" @click="chooseElem" @mouseenter="interactStart" @mouseleave="interactStop" @focusin="interactStart" @focusout="interactStop" class="block w-full text-left m-0 px-4 py-2 text-sm bg-white text-black relative z-20">
                     {{ item }}

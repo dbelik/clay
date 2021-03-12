@@ -2,6 +2,10 @@ module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screen: {
+      xl: "1200px"
+    },
+
     textColor: {
       black: "#1B2437",
       white: '#FFFFFF',
@@ -72,6 +76,7 @@ module.exports = {
       width: {
         "42": "10.5rem",
         "2xfull": "200%",
+        "88": "22rem"
       },
 
       height: {

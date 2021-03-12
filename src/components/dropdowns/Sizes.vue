@@ -18,7 +18,7 @@
             </button>
         </div>
 
-        <div v-if="active" class="origin-top-left absolute mt-1 rounded-md bg-white focus:outline-none overflow-hidden p-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu" style="width: calc(100% - 16px); left: -4px;">
+        <div v-if="active" class="origin-top-left absolute mt-1 rounded-md bg-white focus:outline-none overflow-hidden p-1 z-30" role="menu" aria-orientation="vertical" aria-labelledby="options-menu" style="width: calc(100% - 16px); left: -4px;">
             <div class="flex flex-wrap">
                 <button
                     v-for="item in items.slice(3)" 
