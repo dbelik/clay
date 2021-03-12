@@ -1,15 +1,13 @@
 <template>
-    <a @mouseenter="interactStart" @mouseleave="interactStop" @focusin="interactStart" @focusout="interactStop" class="inline-block text-white font-bold rounded-md py-8px px-22px text-sm bg-transparent-white" :href="{href}">
+    <router-link @mouseenter="interactStart" @mouseleave="interactStop" @focusin="interactStart" @focusout="interactStop" class="inline-block text-white font-bold rounded-md py-8px px-22px text-sm bg-transparent-white" :to="to">
         <slot />
-    </a>
+    </router-link>
 </template>
 <script>
 import { gsap } from 'gsap';
 
 export default {
-    props: {
-        href: String
-    },
+    props: ['to'],
     methods: {
         interactStart(event) {
             const bg = event.target;

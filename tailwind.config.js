@@ -59,14 +59,19 @@ module.exports = {
 
     extend: {
       maxWidth: {
-        content: "1140px"
+        content: "1140px",
+      },
+
+      width: {
+        "42": "10.5rem",
       },
 
       height: {
         navbar: "64px",
         "20px": "20px",
         icon: "24px",
-        "102": "27.5rem"
+        "102": "27.5rem",
+        "58": "14.5rem"
       },
 
       minHeight: {
@@ -74,6 +79,7 @@ module.exports = {
       },
 
       margin: {
+        "8px": "8px",
         "12px": "12px",
         "16px": "16px",
         "20px": "20px",
@@ -85,11 +91,14 @@ module.exports = {
       padding: {
         "8px": "8px",
         "11px": "11px",
+        "13px": "13px",
         "16px": "16px",
         "22px": "22px",
+        "24px": "24px",
         "26px": "26px",
         "32px": "32px",
         "36px": "36px",
+        "40px": "40px",
         "48px": "48px",
       },
 

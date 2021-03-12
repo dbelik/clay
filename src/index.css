@@ -26,6 +26,7 @@ h4 { font-size: theme("fontSize.xl"); }
 p { margin-bottom: theme("margin.16px"); }
 
 input:focus, button:focus, a:focus { outline: none; }
+button { font-family: "Mulish", sans-serif; }
 
 /* Additional tags */
 .outline-none { outline: none; }
