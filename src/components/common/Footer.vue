@@ -45,9 +45,9 @@
             <content-container class="text-grey-600 flex items-center justify-between">
                 <p class="m-0">© Clay Shop all rights reserved</p>
                 <ul class="flex">
-                    <li><a><img class="h-icon" src="/img/icons/socials/instagram.svg" alt="Instagram" /></a></li>
-                    <li class="mx-24px"><a><img class="h-icon" src="/img/icons/socials/twitter.svg" alt="Twitter" /></a></li>
-                    <li><a><img class="h-icon" src="/img/icons/socials/facebook.svg" alt="Facebook" /></a></li>
+                    <li><a href="/"><img class="h-icon" src="/img/icons/socials/instagram.svg" alt="Instagram" /></a></li>
+                    <li class="mx-24px"><a href="/"><img class="h-icon" src="/img/icons/socials/twitter.svg" alt="Twitter" /></a></li>
+                    <li><a href="/"><img class="h-icon" src="/img/icons/socials/facebook.svg" alt="Facebook" /></a></li>
                 </ul>
             </content-container>
         </div>

@@ -58,6 +58,10 @@ module.exports = {
     },
 
     extend: {
+      borderWidth: {
+        "3": "3px"
+      },
+
       maxWidth: {
         content: "1140px",
       },
@@ -87,6 +91,7 @@ module.exports = {
         "30px": "30px",
         "32px": "32px",
         "48px": "48px",
+        '30': "7.5rem"
       },
 
       padding: {
