@@ -79,7 +79,8 @@ module.exports = {
         "20px": "20px",
         icon: "24px",
         "102": "27.5rem",
-        "58": "14.5rem"
+        "58": "14.5rem",
+        "48px": "48px"
       },
 
       minHeight: {
