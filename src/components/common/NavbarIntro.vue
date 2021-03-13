@@ -150,8 +150,8 @@ export default {
             const button = event.currentTarget;
             const line1 = button.children[0].children[0];
             const line2 = button.children[0].children[1];
-            const mobileLinks = button.parentNode.parentNode.children[2];
-            const links = button.parentNode.parentNode.children[2].children[0].children[0];
+            const mobileLinks = button.parentNode.parentNode.children[3];
+            const links = button.parentNode.parentNode.children[3].children[0].children[0];
 
             gsap.to(line1, { y: 3, duration: .1 });
             gsap.to(line2, { y: -3, duration: .1 });
@@ -165,8 +165,8 @@ export default {
             const button = event.currentTarget;
             const line1 = button.children[0].children[0];
             const line2 = button.children[0].children[1];
-            const mobileLinks = button.parentNode.parentNode.children[2];
-            const links = button.parentNode.parentNode.children[2].children[0].children[0];
+            const mobileLinks = button.parentNode.parentNode.children[3];
+            const links = button.parentNode.parentNode.children[3].children[0].children[0];
 
             gsap.to(links, { color: "#ffffff", duration: .3 });
             gsap.to(mobileLinks, { height: "0", duration: .4, delay: .4 });
