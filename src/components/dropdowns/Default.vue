@@ -37,22 +37,22 @@ export default {
     methods: {
       toggle (event) {
         this.active = !this.active;
-        if (this.active) gsap.to(event.target.children[0], { rotation: 180, duration: .2, transformOrigin: "center center" });
-        else gsap.to(event.target.children[0], { rotation: 0, duration: .2, transformOrigin: "center center" });
+        if (this.active) gsap.to(event.currentTarget.children[0], { rotation: 180, duration: .2, transformOrigin: "center center" });
+        else gsap.to(event.currentTarget.children[0], { rotation: 0, duration: .2, transformOrigin: "center center" });
       },
       chooseElem(event) {
-        if (this.selectedElem === event.target) return;
+        if (this.selectedElem === event.currentTarget) return;
         this.active = false;
-        this.selectedElem = event.target;
+        this.selectedElem = event.currentTarget;
       },
 
       interactStart(event) {
-        gsap.to(event.target, { backgroundColor: "#F6F6F6", duration: .2 });
-        gsap.to(event.target, { fontWeight: "bold", color: "#EDA3B5", duration: 0 });
+        gsap.to(event.currentTarget, { backgroundColor: "#F6F6F6", duration: .2 });
+        gsap.to(event.currentTarget, { fontWeight: "bold", color: "#EDA3B5", duration: 0 });
       },
       interactStop(event) {
-        gsap.to(event.target, { backgroundColor: "#ffffff", duration: .2 });
-        gsap.to(event.target, { fontWeight: "normal", color: "#1B2437", duration: 0 });
+        gsap.to(event.currentTarget, { backgroundColor: "#ffffff", duration: .2 });
+        gsap.to(event.currentTarget, { fontWeight: "normal", color: "#1B2437", duration: 0 });
       }
     },
 }

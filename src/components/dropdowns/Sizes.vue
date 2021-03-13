@@ -51,8 +51,8 @@ export default {
     methods: {
       toggle (event) {
         this.active = !this.active;
-        if (this.active) gsap.to(event.target.children[0], { rotation: 180, duration: .2, transformOrigin: "center center" });
-        else gsap.to(event.target.children[0], { rotation: 0, duration: .2, transformOrigin: "center center" });
+        if (this.active) gsap.to(event.currentTarget.children[0], { rotation: 180, duration: .2, transformOrigin: "center center" });
+        else gsap.to(event.currentTarget.children[0], { rotation: 0, duration: .2, transformOrigin: "center center" });
       },
       chooseElem(event) {
         const button = event.currentTarget;
@@ -62,10 +62,10 @@ export default {
       },
 
       interactStart(event) {
-        gsap.to(event.target, { backgroundColor: "#F6F6F6", fontWeight: "bold", color: "#EDA3B5", duration: .2 });
+        gsap.to(event.currentTarget, { backgroundColor: "#F6F6F6", fontWeight: "bold", color: "#EDA3B5", duration: .2 });
       },
       interactStop(event) {
-        gsap.to(event.target, { backgroundColor: "#ffffff", fontWeight: "normal", color: "#1B2437", duration: .2 });
+        gsap.to(event.currentTarget, { backgroundColor: "#ffffff", fontWeight: "normal", color: "#1B2437", duration: .2 });
       }
     },
 }
