@@ -1,6 +1,6 @@
 <template>
   <section id="intro-section" class="bg-brown text-white min-h-section flex items-center justify-center">
-    <content-container class="min-h-section flex items-center text-center md:text-left bg-no-repeat">
+    <content-container class="min-h-section flex items-center justify-center md:justify-start text-center md:text-left bg-no-repeat">
       <div class="max-w-sm">
         <h1>Admire Stylish <br /> Dresses & Looks</h1>
         <p>

@@ -3,7 +3,7 @@
     <NavbarIntro v-if="this.$route.path === '/'" />
     <Navbar v-else />
 
-    <main :class="`h-full w-full ${this.$route.path === '/' ? 'mt-30' : ''}`">
+    <main :class="`h-full w-full ${this.$route.path === '/' ? 'mt-6 md:mt-30' : ''}`">
       <transition name="transition">
         <router-view />
       </transition>
