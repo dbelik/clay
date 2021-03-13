@@ -1,20 +1,23 @@
 <template>
     <footer class="bg-white mt-44px">
-        <div class="flex items-center justify-center py-24px border-b border-grey-200"><NavLinks spacing="44" /></div>
-        <content-container class="flex py-48px">
-            <div class="w-2/5">
-                <div class="flex items-center mb-24px">
-                    <img class="h-icon mr-16px" src="/img/icons/clay.svg" alt="Clay" />
-                    <h3 class="m-0">Clay Shop</h3>
+        <div class="flex items-center justify-center py-24px border-b border-grey-200"><NavLinks spacing="30" /></div>
+
+        <content-container class="flex flex-wrap justify-center py-48px">
+            <div class="w-full mb-48px lg:mb-0 lg:w-2/5 flex justify-center lg:justify-start">
+                <div class="w-full xs:w-3/5 md:w-2/5 lg:w-4/5 text-center sm:text-left">
+                    <div class="flex items-center mb-24px justify-center sm:justify-start">
+                        <img class="h-icon mr-16px" src="/img/icons/clay.svg" alt="Clay" />
+                        <h3 class="m-0">Clay Shop</h3>
+                    </div>
+                    <p class="text-grey-600 w-full m-0">
+                        Fashion is a popular aesthetic expression at a particular time, place and 
+                        in a specific context, especially in clothing, footwear, lifestyle, 
+                        accessories, makeup.
+                    </p>
                 </div>
-                <p class="text-grey-600 w-3/5 m-0">
-                    Fashion is a popular aesthetic expression at a particular time, place and 
-                    in a specific context, especially in clothing, footwear, lifestyle, 
-                    accessories, makeup.
-                </p>
             </div>
 
-            <div class="w-1/5">
+            <div class="w-full mb-48px sm:mb-0 text-center sm:text-left sm:w-1/3 lg:w-1/5">
                 <h3 class="mb-24px">Hot links</h3>
                 <ul class="text-grey-600">
                     <li class="mb-8px"><text-link to="/">Home</text-link></li>
@@ -24,7 +27,7 @@
                 </ul>
             </div>
 
-            <div class="w-1/5">
+            <div class="w-full mb-48px sm:mb-0 text-center sm:text-left sm:w-1/3 lg:w-1/5">
                 <h3 class="mb-24px">More info</h3>
                 <ul class="text-grey-600">
                     <li class="mb-8px"><text-link to="/">How it works</text-link></li>
@@ -34,7 +37,7 @@
                 </ul>
             </div>
 
-            <div class="w-1/5">
+            <div class="w-full mb-48px sm:mb-0 text-center sm:text-left sm:w-1/3 lg:w-1/5">
                 <h3 class="mb-24px">Customer care</h3>
                 <ul class="text-grey-600">
                     <li class="mb-8px"><text-link to="/">FAQ</text-link></li>
