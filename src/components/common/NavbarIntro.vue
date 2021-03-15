@@ -1,5 +1,5 @@
 <template>
-    <nav class="fixed top-0 left-0 w-screen bg-white z-50 md:h-180px overflow-hidden">
+    <nav class="fixed top-0 left-0 w-screen bg-white z-50 md:h-180px">
         <content-container 
             class="flex items-center justify-between md:justify-start py-24px"
         >
@@ -54,7 +54,7 @@
             <ul class="flex items-center justify-center mt-1">
                 <li class="mr-11">
                     <h3 class="m-0">
-                        <router-link to="/" class="relative inline-block pb-32px">
+                        <router-link to="/" class="relative inline-block pb-30px">
                             <span v-if="this.$route.path === '/'" class="absolute border-l-3 border-black w-full h-20px bottom-0 left-1/2 transform -translate-1/2" />
                             Home
                         </router-link>
@@ -62,7 +62,7 @@
                 </li>
                 <li class="mx-11">
                     <h3 class="m-0">
-                        <router-link to="/shop" class="relative inline-block pb-32px">
+                        <router-link to="/shop" class="relative inline-block pb-30px">
                             <span v-if="this.$route.path === '/shop'" class="absolute border-t border-black w-full h-1 top-1/2" />
                             Shop
                         </router-link>
@@ -70,7 +70,7 @@
                 </li>
                 <li class="mx-11">
                     <h3 class="m-0">
-                        <router-link to="/" class="relative inline-block pb-32px">
+                        <router-link to="/" class="relative inline-block pb-30px">
                             <span v-if="this.$route.path === '/blog'" class="absolute border-t border-black w-full h-1 top-1/2" />
                             Blog
                         </router-link>
@@ -78,7 +78,7 @@
                 </li>
                 <li class="ml-11">
                     <h3 class="m-0">
-                        <router-link to="/" class="relative inline-block pb-32px">
+                        <router-link to="/" class="relative inline-block pb-30px">
                             <span v-if="this.$route.path === '/contact'" class="absolute border-t border-black w-full h-1 top-1/2" />
                             Contact
                         </router-link>
@@ -202,7 +202,7 @@ export default {
             gsap.to(searchTitle, { marginLeft: "24px", duration: 0, delay: .8 });
             gsap.to(searchTitle, { width: "100%", duration: .4, delay: .8 });
             gsap.to(searchTitle, { height: "100%", duration: 0, delay: .8 });
-            gsap.to(input, { height: "110px", duration: .4, delay: .8 });
+            gsap.to(input, { height: "80px", duration: .4, delay: .8 });
             gsap.to(navlinks, { height: "0", marginTop: "9px", duration: .4, delay: .8 });
             gsap.to(cancel, { display: "block", duration: 0, delay: .8 });
             gsap.to(cancel, { opacity: 1, duration: .4, delay: .8 });
@@ -226,7 +226,7 @@ export default {
             gsap.to(searchTitle, { marginLeft: "0", duration: 0, delay: .4 });
             gsap.to(searchTitle, { height: "0", duration: 0, delay: .4 });
             gsap.to(input, { height: "0", duration: .4 });
-            gsap.to(navlinks, { height: "68px", marginTop: "52px", marginBottom: "0", duration: .4 });
+            gsap.to(navlinks, { height: "68px", marginTop: "2rem", marginBottom: "0", duration: .4 });
 
             gsap.to(navlinks, { color: "#1B2437", duration: .2, delay: .8 });
             gsap.to(logo, { width: "11rem", duration: .4, delay: .4 });

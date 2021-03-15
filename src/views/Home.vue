@@ -90,7 +90,7 @@ export default {
   @media (min-width: 768px) {
     #intro-section > div {
       background-image: url(/img/home/lines.svg), url(/img/home/intro.png); 
-      background-size: 70%, 440px; 
+      background-size: 70%, 450px; 
       background-position: 100% bottom, 80% bottom;
     }
   }
