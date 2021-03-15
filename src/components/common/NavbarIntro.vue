@@ -1,5 +1,5 @@
 <template>
-    <nav class="fixed top-0 left-0 w-screen bg-white z-50" style="height: 201px;">
+    <nav class="fixed top-0 left-0 w-screen bg-white z-50">
         <intro-content-container 
             class="flex items-center justify-between md:justify-start py-24px"
             style="max-width: 1480px"
@@ -242,3 +242,11 @@ export default {
     }
 }
 </script>
+
+<style>
+@media (min-width: 768px) {
+    nav {
+        height: 201px;
+    }
+}
+</style>
