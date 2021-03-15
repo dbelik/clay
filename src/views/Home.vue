@@ -57,22 +57,22 @@
       <splide :options="options">
         <splide-slide>
           <div class="w-full h-full flex">
-            <div class="w-1/4 h-full flex flex-col items-center justify-center">
+            <div class="w-full md:w-1/2 lg:w-1/4 h-full flex flex-col items-center justify-center text-center">
               <img src="/img/home/slider/slide_1/louis_vouiton.png" alt="Louis Vouiton" />
               <h4 class="mb-4 mt-12 font-bold">Louis Vouiton</h4>
             </div>
 
-            <div class="w-1/4 h-full flex flex-col items-center justify-center">
+            <div class="w-1/2 lg:w-1/4 h-full hidden sm:flex flex-col items-center justify-center text-center">
               <img src="/img/home/slider/slide_1/dolce&gabbana.png" alt="Dolce&Gabbana" />
               <h4 class="mb-6 mt-10 font-bold">Dolce&Gabbana</h4>
             </div>
 
-            <div class="w-1/4 h-full flex flex-col items-center justify-center">
+            <div class="w-1/4 h-full hidden lg:flex flex-col items-center justify-center text-center">
               <img src="/img/home/slider/slide_1/gucci.png" alt="Gucci" />
               <h4 class="mb-0 mt-16 font-bold">Gucci</h4>
             </div>
 
-            <div class="w-1/4 h-full flex flex-col items-center justify-center">
+            <div class="w-1/4 h-full hidden lg:flex flex-col items-center justify-center text-center">
               <img src="/img/home/slider/slide_1/dries_van_noten.png" alt="Dries van Noten" />
               <h4 class="mb-5 mt-12 font-bold">Dries van Noten</h4>
             </div>
@@ -194,8 +194,10 @@ export default {
     margin-bottom: 23px;
   }
 
-  .splide__slide {
-    padding: 0px 100px;
+  @media(min-width: 480px) {
+    .splide__slide {
+      padding: 0px 100px;
+    }
   }
 
   .splide__pagination > li {
