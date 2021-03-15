@@ -16,11 +16,16 @@ body {
     background-color: theme("backgroundColor.grey-100");
 }
 
-h1, h2, h3 { font-family: "Playfair", "sans-serif"; margin-bottom: theme("margin.16px"); }
+h1, h2, h3 { 
+    font-family: "Playfair", "sans-serif"; 
+    margin-bottom: 12px; 
+    line-height: 1.4;
+    letter-spacing: .3px;
+}
 
 h1 { font-size: theme("fontSize.4xl"); }
 h2 { font-size: theme("fontSize.3xl"); }
-h3 { font-size: theme("fontSize.2xl"); }
+h3 { font-size: theme("fontSize.2xl"); margin-bottom: 22px; }
 h4 { font-size: theme("fontSize.xl"); }
 
 p { margin-bottom: theme("margin.16px"); }

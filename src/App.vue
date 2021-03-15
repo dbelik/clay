@@ -26,6 +26,6 @@ export default {
     Footer,
     NavbarIntro,
     FooterIntro
-  }
+  },
 }
 </script>

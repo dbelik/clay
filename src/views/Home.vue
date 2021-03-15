@@ -103,7 +103,7 @@ export default {
     // Slide,
     // Pagination,
     // Navigation,
-  }
+  },
 }
 </script>
 

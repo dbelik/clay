@@ -1,5 +1,13 @@
 <template>
-    <router-link @mouseenter="interactStart" @mouseleave="interactStop" @focusin="interactStart" @focusout="interactStop" class="inline-block relative overflow-hidden text-black font-bold rounded-md px-11px py-3px text-xl bg-transparent-white" :to="to">
+    <router-link 
+        @mouseenter="interactStart" 
+        @mouseleave="interactStop" 
+        @focusin="interactStart" 
+        @focusout="interactStop" 
+        class="inline-block relative overflow-hidden text-black font-bold rounded-md text-xl bg-transparent-white"
+        style="padding: 1px 8px;"
+        :to="to"
+    >
         <span class="absolute w-full h-full bg-pink top-full left-0 z-0 text-white flex items-center justify-center"><slot /></span>
         <span class="z-10"><slot /></span>
     </router-link>

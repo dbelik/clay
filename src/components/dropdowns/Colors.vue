@@ -4,8 +4,8 @@
             <button 
                 v-for="item in items.slice(0, 3)" :key="item" 
                 @click="chooseElem" 
-                class="inline-block relative rounded-sm mx-1 z-20 w-8 h-8 flex items-center justify-center border-2" 
-                :style="`border-color: ${!selectedElem && items[0] === item || selectedElem && selectedElem.children[0].style.backgroundColor === item ? item : 'transparent'}`"
+                class="inline-block relative mx-0.5 z-20 flex items-center justify-center border-3" 
+                :style="`border-color: ${!selectedElem && items[0] === item || selectedElem && selectedElem.children[0].style.backgroundColor === item ? item : 'transparent'}; height: 34px; width: 34px; border-radius: 4px;`"
             >
                 <span class="inline-block w-6 h-6 rounded-sm" :style="`background-color: ${item};`"></span>
             </button>
@@ -23,8 +23,8 @@
                     v-for="item in items.slice(3)" 
                     :key="item" 
                     @click="chooseElem" 
-                    class="block relative rounded-sm m-1 z-20 w-8 h-8 flex items-center justify-center border-2" 
-                    :style="`border-color: ${selectedElem && selectedElem.children[0].style.backgroundColor === item ? item : 'transparent'}`"
+                    class="block relative m-0.5 z-20 flex items-center justify-center border-3" 
+                    :style="`border-color: ${selectedElem && selectedElem.children[0].style.backgroundColor === item ? item : 'transparent'}; height: 34px; width: 34px; border-radius: 4px;`"
                 >
                     <span class="inline-block w-6 h-6 rounded-sm" :style="`background-color: ${item};`"></span>
                 </button>

@@ -1,7 +1,7 @@
 <template>
     <div class="rounded-lg overflow-hidden">
-        <div class="h-72 bg-cover bg-center bg-no-repeat" :style="`background-image: ${background};`"></div>
-        <div class="h-72 bg-white px-32px py-24px flex flex-col items-between justify-between">
+        <div class="h-70 bg-cover bg-center bg-no-repeat" :style="`background-image: ${background};`"></div>
+        <div class="h-70 bg-white px-30px py-24px flex flex-col items-between justify-between">
           <div class="flex flex-col justify-start items-start">
             <h2 class="overflow-hidden overflow-ellipsis" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">{{ title }}</h2>
             <p class="m-0 text-grey-600 overflow-hidden overflow-ellipsis" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">{{ description }}</p>

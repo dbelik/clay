@@ -4,7 +4,7 @@
             <button 
                 v-for="item in items.slice(0, 3)" :key="item" 
                 @click="chooseElem" 
-                :class="`inline-block relative rounded-md mx-1 z-20 w-8 h-10 flex items-center justify-center border-2 w-16 w-11 ${
+                :class="`inline-block relative rounded-md ml-4 z-20 w-18 h-11 flex items-center justify-center border-2 w-16 w-11 ${
                     !selectedElem && items[0] === item || selectedElem && selectedElem.innerText === item ? 'bg-pink text-white border-pink' : 'bg-transparent border-grey-300'
                 }`" 
             >
@@ -12,19 +12,19 @@
             </button>
 
             <button @click="toggle">
-                <svg class="-mr-1 ml-2 h-5 w-5 relative" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="-mr-1 ml-4 h-5 w-5 relative" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1.39673L9 9.39673L17 1.39673" stroke="#D1D1D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </button>
         </div>
 
-        <div v-if="active" class="origin-top-left absolute mt-1 rounded-md bg-white focus:outline-none overflow-hidden p-1 z-30" role="menu" aria-orientation="vertical" aria-labelledby="options-menu" style="width: calc(100% - 16px); left: -4px;">
+        <div v-if="active" class="origin-top-left absolute ml-3 mt-1 rounded-md bg-white focus:outline-none overflow-hidden p-1 z-30" role="menu" aria-orientation="vertical" aria-labelledby="options-menu" style="width: calc(100% - 16px); left: -4px;">
             <div class="flex flex-wrap">
                 <button
                     v-for="item in items.slice(3)" 
                     :key="item" 
                     @click="chooseElem" 
-                    :class="`block relative rounded-md m-1 z-20 w-8 h-8 flex items-center justify-center border-2 w-16 w-11 ${
+                    :class="`block relative rounded-md m-1 mr-3 z-20 w-18 h-11 flex items-center justify-center border-2 w-16 w-11 ${
                         !selectedElem && items[0] === item || selectedElem && selectedElem.innerText === item ? 'bg-pink text-white border-pink' : 'bg-transparent border-grey-300'
                     }`"
                 >

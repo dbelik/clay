@@ -70,13 +70,13 @@ module.exports = {
       },
 
       maxWidth: {
-        content: "1140px",
+        content: "1165px",
       },
 
       width: {
         "42": "10.5rem",
         "2xfull": "200%",
-        "88": "22rem"
+        "88": "22rem",
       },
 
       height: {
@@ -85,6 +85,7 @@ module.exports = {
         icon: "24px",
         "102": "27.5rem",
         "58": "14.5rem",
+        "70": "17.5rem",
         "48px": "48px"
       },
 
@@ -98,6 +99,7 @@ module.exports = {
         "16px": "16px",
         "20px": "20px",
         "24px": "24px",
+        "28px": "28px",
         "30px": "30px",
         "32px": "32px",
         "44px": "44px",
@@ -114,6 +116,7 @@ module.exports = {
         "22px": "22px",
         "24px": "24px",
         "26px": "26px",
+        "30px": "30px",
         "32px": "32px",
         "36px": "36px",
         "40px": "40px",
