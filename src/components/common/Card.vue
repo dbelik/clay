@@ -27,7 +27,7 @@ export default {
     background: String,
     title: String,
     description: String,
-    price: Number,
+    price: String,
   }
 }
 </script>

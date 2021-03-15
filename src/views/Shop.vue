@@ -95,7 +95,14 @@
       <li class="hidden md:block"><pink-fill-interact-link to="/">2</pink-fill-interact-link></li>
       <li class="text-xl block md:hidden">...</li>
       <li><pink-fill-interact-link to="/">3</pink-fill-interact-link></li>
-      <li><pink-fill-link to="/">4</pink-fill-link></li>
+      <li>
+        <span 
+            class="inline-block relative overflow-hidden text-white bg-pink font-bold rounded-md text-xl"
+            style="padding: 1px 10px;"
+        >
+            4
+        </span>
+      </li>
       <li><pink-fill-interact-link to="/">5</pink-fill-interact-link></li>
       <li class="hidden md:block"><pink-fill-interact-link to="/">6</pink-fill-interact-link></li>
       <li class="hidden md:block"><pink-fill-interact-link to="/">7</pink-fill-interact-link></li>
@@ -116,7 +123,6 @@ import SizesDropdown from "../components/dropdowns/Sizes.vue"
 import AlignmentCheckbox from "../components/checkboxes/Alignment.vue"
 
 import PinkFillInteractLink from "../components/links/PinkFillInteract.vue"
-import PinkFillLink from "../components/links/PinkFill.vue"
 import ShiftBackgroundLink from "../components/links/ShiftBackground.vue"
 
 import Card from '../components/common/Card.vue'
@@ -129,7 +135,6 @@ export default {
     DefaultDropdown,
     PinkFillInteractLink,
     ShiftBackgroundLink,
-    PinkFillLink,
     AlignmentCheckbox,
     ColorsDropdown,
     SizesDropdown
