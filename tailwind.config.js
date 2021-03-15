@@ -45,10 +45,10 @@ module.exports = {
       sm: "14px",
       base: "16px",
 
-      "4xl": "48px",
-      "3xl": "34px",
+      "4xl": "52px",
+      "3xl": "39px",
       "2xl": "24px",
-      "xl": "20px",
+      "xl": "22px",
     },
 
     borderColor: {
@@ -65,12 +65,17 @@ module.exports = {
     },
 
     extend: {
+      borderOpacity: {
+        "20": '0.2'
+      },
+
       borderWidth: {
         "3": "3px"
       },
 
       maxWidth: {
         content: "1165px",
+        'intro-content': "1300px",
       },
 
       width: {
@@ -86,11 +91,12 @@ module.exports = {
         "102": "27.5rem",
         "58": "14.5rem",
         "70": "17.5rem",
-        "48px": "48px"
+        "48px": "48px",
+        '490px': '490px'
       },
 
       minHeight: {
-        section: "540px"
+        section: "616px"
       },
 
       margin: {

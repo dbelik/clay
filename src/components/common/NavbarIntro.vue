@@ -1,13 +1,16 @@
 <template>
     <nav class="fixed top-0 left-0 w-screen bg-white z-50">
-        <content-container class="flex items-center justify-between md:justify-start py-24px">
+        <content-container 
+            class="flex items-center justify-between md:justify-start py-24px"
+            style="max-width: 1480px"
+        >
             <div class="flex items-center overflow-hidden whitespace-nowrap w-44">
                 <img class="h-icon mr-16px" src="/img/icons/clay.svg" alt="Clay" />
                 <h3 class="m-0">Clay Shop</h3>
             </div>
             
             <ul class="hidden md:flex items-center justify-center w-4/5">
-                <li class="mr-48px flex items-center">
+                <li class="mr-48px flex items-center" style="margin-left: -86px">
                     <a class="inline-block" href="/"><img src="/img/icons/socials/instagram.svg" alt="Instagram" /></a>
                 </li>
                 <li class="mr-48px flex items-center">
@@ -48,9 +51,9 @@
             <input class="text-4xl w-full" placeholder="Search" style="caret-color: #EDA3B5;" />
         </content-container>
             
-        <content-container class="mt-32px hidden md:block overflow-hidden">
-            <ul class="flex items-center justify-center ">
-                <li class="mr-30px">
+        <content-container class="mt-48px hidden md:block overflow-hidden">
+            <ul class="flex items-center justify-center mt-1">
+                <li class="mr-14">
                     <h3 class="m-0">
                         <router-link to="/" class="relative inline-block pb-32px">
                             <span v-if="this.$route.path === '/'" class="absolute border-l-3 border-black w-full h-20px bottom-0 left-1/2 transform -translate-1/2" />
@@ -58,7 +61,7 @@
                         </router-link>
                     </h3>
                 </li>
-                <li class="mx-30px">
+                <li class="mx-14">
                     <h3 class="m-0">
                         <router-link to="/shop" class="relative inline-block pb-32px">
                             <span v-if="this.$route.path === '/shop'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -66,7 +69,7 @@
                         </router-link>
                     </h3>
                 </li>
-                <li class="mx-30px">
+                <li class="mx-14">
                     <h3 class="m-0">
                         <router-link to="/blog" class="relative inline-block pb-32px">
                             <span v-if="this.$route.path === '/blog'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -74,7 +77,7 @@
                         </router-link>
                     </h3>
                 </li>
-                <li class="ml-30px">
+                <li class="ml-14">
                     <h3 class="m-0">
                         <router-link to="/contact" class="relative inline-block pb-32px">
                             <span v-if="this.$route.path === '/contact'" class="absolute border-t border-black w-full h-1 top-1/2" />

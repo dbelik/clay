@@ -1,8 +1,10 @@
 <template>
-    <footer class="bg-white mt-44px">
-        <div class="flex items-center justify-center py-24px border-b border-grey-200"><NavLinks spacing="30" /></div>
+    <footer class="bg-white mt-5">
+        <div class="flex items-center justify-center py-24px border-b border-grey-200">
+            <NavLinks spacing="44" />
+        </div>
 
-        <content-container class="flex flex-wrap justify-center py-48px">
+        <intro-content-container class="flex flex-wrap justify-center py-48px">
             <div class="w-full mb-48px lg:mb-0 lg:w-2/5 flex justify-center lg:justify-start">
                 <div class="w-full xs:w-3/5 md:w-2/5 lg:w-4/5 text-center sm:text-left">
                     <div class="flex items-center mb-24px justify-center sm:justify-start">
@@ -45,21 +47,21 @@
                     <li><text-link to="/">Privacy Policy</text-link></li>
                 </ul>
             </div>
-        </content-container>
+        </intro-content-container>
         <div class="bg-grey-200 py-26px">
-            <content-container class="text-grey-600 flex items-center justify-between">
+            <intro-content-container class="text-grey-600 flex items-center justify-between">
                 <p class="m-0">© Clay Shop all rights reserved</p>
                 <ul class="flex">
                     <li><a href="/"><img class="h-icon" src="/img/icons/socials/instagram.svg" alt="Instagram" /></a></li>
                     <li class="mx-24px"><a href="/"><img class="h-icon" src="/img/icons/socials/twitter.svg" alt="Twitter" /></a></li>
                     <li><a href="/"><img class="h-icon" src="/img/icons/socials/facebook.svg" alt="Facebook" /></a></li>
                 </ul>
-            </content-container>
+            </intro-content-container>
         </div>
     </footer>
 </template>
 <script>
-import ContentContainer from "./Container.vue"
+import IntroContentContainer from "./ContainerIntro.vue"
 import NavLinks from "./NavLinks.vue"
 
 import TextLink from "../links/Text.vue"
@@ -67,7 +69,7 @@ import TextLink from "../links/Text.vue"
 export default {
   name: 'Footer',
   components: {
-    ContentContainer,
+    IntroContentContainer,
     TextLink,
     NavLinks
   }

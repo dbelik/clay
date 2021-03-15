@@ -18,15 +18,14 @@ body {
 
 h1, h2, h3 { 
     font-family: "Playfair", "sans-serif"; 
-    margin-bottom: 12px; 
     line-height: 1.4;
     letter-spacing: .3px;
 }
 
-h1 { font-size: theme("fontSize.4xl"); }
-h2 { font-size: theme("fontSize.3xl"); }
+h1 { font-size: theme("fontSize.4xl"); margin-bottom: 16px; }
+h2 { font-size: theme("fontSize.3xl"); margin-bottom: 12px; }
 h3 { font-size: theme("fontSize.2xl"); margin-bottom: 22px; }
-h4 { font-size: theme("fontSize.xl"); }
+h4 { font-size: theme("fontSize.xl"); margin-bottom: 22px; font-weight: normal; }
 
 p { margin-bottom: theme("margin.16px"); }
 

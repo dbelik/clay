@@ -1,5 +1,12 @@
 <template>
-    <router-link @mouseenter="interactStart" @mouseleave="interactStop" @focusin="interactStart" @focusout="interactStop" class="inline-block text-white font-bold rounded-md py-8px px-22px text-sm bg-transparent-white" :to="to">
+    <router-link
+        @mouseenter="interactStart"
+        @mouseleave="interactStop"
+        @focusin="interactStart"
+        @focusout="interactStop"
+        class="inline-block text-white font-bold rounded-md py-8px px-7 text-sm bg-transparent-white"
+        :to="to"
+    >
         <slot />
     </router-link>
 </template>
