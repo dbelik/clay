@@ -2,6 +2,7 @@
     <nav class="fixed top-0 left-0 w-screen bg-white z-50 md:h-180px">
         <content-container 
             class="flex items-center justify-between md:justify-start py-24px"
+            style="max-width: 1340px"
         >
             <div class="flex items-center overflow-hidden whitespace-nowrap w-44">
                 <img class="h-icon mr-16px" src="/img/icons/clay.svg" alt="Clay" />
@@ -46,7 +47,7 @@
             </button>
         </content-container>
 
-        <content-container class="h-0 overflow-hidden md:block hidden">
+        <content-container class="h-0 overflow-hidden md:block hidden" style="max-width: 1340px;">
             <input class="text-4xl w-full" placeholder="Search" style="caret-color: #EDA3B5;" />
         </content-container>
             

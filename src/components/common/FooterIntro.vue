@@ -39,7 +39,7 @@
                 </ul>
             </div>
 
-            <div class="w-full sm:mb-48px mb-0 text-center sm:text-left sm:w-1/3 lg:w-1/5">
+            <div class="w-full mb-48px text-center sm:text-left sm:w-1/3 lg:w-1/5">
                 <h3 class="mb-24px">Customer care</h3>
                 <ul class="text-grey-600">
                     <li class="mb-8px"><text-link to="/">FAQ</text-link></li>
