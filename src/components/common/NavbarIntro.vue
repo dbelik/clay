@@ -1,6 +1,6 @@
 <template>
-    <nav class="fixed top-0 left-0 w-screen bg-white z-50">
-        <content-container 
+    <nav class="fixed top-0 left-0 w-screen bg-white z-50" style="height: 201px;">
+        <intro-content-container 
             class="flex items-center justify-between md:justify-start py-24px"
             style="max-width: 1480px"
         >
@@ -45,13 +45,13 @@
                     <line y1="9" x2="25" y2="9" stroke="#1B2437" stroke-width="2"/>
                 </svg>
             </button>
-        </content-container>
+        </intro-content-container>
 
-        <content-container class="h-0 overflow-hidden md:block hidden">
+        <intro-content-container class="h-0 overflow-hidden md:block hidden" style="max-width: 1480px;">
             <input class="text-4xl w-full" placeholder="Search" style="caret-color: #EDA3B5;" />
-        </content-container>
+        </intro-content-container>
             
-        <content-container class="mt-48px hidden md:block overflow-hidden">
+        <intro-content-container class="mt-48px hidden md:block overflow-hidden">
             <ul class="flex items-center justify-center mt-1">
                 <li class="mr-14">
                     <h3 class="m-0">
@@ -86,10 +86,10 @@
                     </h3>
                 </li>
             </ul>
-        </content-container>
+        </intro-content-container>
 
         <div class="w-screen h-screen bg-white absolute left-full top-0 overflow-hidden md:hidden">
-            <content-container>
+            <intro-content-container>
                 <ul class="flex items-center flex-col mt-20 text-white">
                     <li class="mb-16px">
                         <h3 class="m-0">
@@ -124,18 +124,18 @@
                         </h3>
                     </li>
                 </ul>
-            </content-container>
+            </intro-content-container>
         </div>
     </nav>
 </template>
 
 <script>
 import gsap from 'gsap'
-import ContentContainer from "./Container.vue"
+import IntroContentContainer from "./ContainerIntro.vue"
 
 export default {
     components: {
-        ContentContainer
+        IntroContentContainer
     },
     data() {
         return {
@@ -227,7 +227,7 @@ export default {
             gsap.to(searchTitle, { marginLeft: "0", duration: 0, delay: .4 });
             gsap.to(searchTitle, { height: "0", duration: 0, delay: .4 });
             gsap.to(input, { height: "0", duration: .4 });
-            gsap.to(navlinks, { height: "88px", marginTop: "32px", marginBottom: "0", duration: .4 });
+            gsap.to(navlinks, { height: "68px", marginTop: "52px", marginBottom: "0", duration: .4 });
 
             gsap.to(navlinks, { color: "#1B2437", duration: .2, delay: .8 });
             gsap.to(logo, { width: "11rem", duration: .4, delay: .4 });
