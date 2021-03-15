@@ -4,9 +4,7 @@
     <Navbar v-else />
 
     <main :class="`h-full w-full ${this.$route.path === '/' ? 'mt-6 md:mt-30' : ''}`">
-      <transition name="transition">
-        <router-view />
-      </transition>
+      <router-view />
     </main>
 
     <FooterIntro v-if="this.$route.path === '/'" />

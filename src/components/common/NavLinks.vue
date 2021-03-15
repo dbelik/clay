@@ -18,7 +18,7 @@
         </li>
         <li :class="`sm:mx-${spacing}px`">
             <h3 class="m-0">
-                <router-link to="/blog" class="relative">
+                <router-link to="/" class="relative">
                     <span v-if="this.$route.path === '/blog'" class="absolute border-t border-black w-full h-1 top-1/2" />
                     Blog
                 </router-link>
@@ -26,7 +26,7 @@
         </li>
         <li :class="`sm:ml-${spacing}px`">
             <h3 class="m-0">
-                <router-link to="/contact" class="relative">
+                <router-link to="/" class="relative">
                     <span v-if="this.$route.path === '/contact'" class="absolute border-t border-black w-full h-1 top-1/2" />
                     Contact
                 </router-link>

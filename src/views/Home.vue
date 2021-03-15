@@ -8,7 +8,7 @@
           automated outfit advice, we needed to understand 
           people’s fashion taste. 
         </p>
-        <white-border-link to="/123">Show More</white-border-link>
+        <white-border-link to="/">Show More</white-border-link>
       </div>
     </intro-content-container>
   </section>
@@ -21,7 +21,7 @@
       >
         <h2 class="w-1/3">Women Collection</h2>
         <h4 class="font-semibold text-xl">Spring 2020</h4>
-        <white-fill-link to="/123">Popular</white-fill-link>
+        <white-fill-link to="/">Popular</white-fill-link>
       </div>
 
       <div class="w-full sm:w-3/4 md:w-1/2 xs:h-490px flex flex-col">
@@ -92,6 +92,7 @@
           price=540
           title="Shiny dress Givenchy"
           description="A shiny dress in the style of Lady Gaga, for bright events and cool parties…"
+          class="mb-24px"
           style="width: 25rem; height: 38.93rem;"
         />
       </div>

@@ -1,7 +1,7 @@
 <template>
     <footer class="bg-white mt-5">
         <div class="flex items-center justify-center py-24px border-b border-grey-200">
-            <NavLinks spacing="44" />
+            <NavLinks spacing="56" />
         </div>
 
         <intro-content-container class="flex flex-wrap justify-center py-48px">
