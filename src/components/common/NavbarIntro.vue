@@ -1,8 +1,7 @@
 <template>
-    <nav class="fixed top-0 left-0 w-screen bg-white z-50 md:h-201px">
-        <intro-content-container 
+    <nav class="fixed top-0 left-0 w-screen bg-white z-50 md:h-180px overflow-hidden">
+        <content-container 
             class="flex items-center justify-between md:justify-start py-24px"
-            style="max-width: 1480px"
         >
             <div class="flex items-center overflow-hidden whitespace-nowrap w-44">
                 <img class="h-icon mr-16px" src="/img/icons/clay.svg" alt="Clay" />
@@ -45,15 +44,15 @@
                     <line y1="9" x2="25" y2="9" stroke="#1B2437" stroke-width="2"/>
                 </svg>
             </button>
-        </intro-content-container>
+        </content-container>
 
-        <intro-content-container class="h-0 overflow-hidden md:block hidden" style="max-width: 1480px;">
+        <content-container class="h-0 overflow-hidden md:block hidden">
             <input class="text-4xl w-full" placeholder="Search" style="caret-color: #EDA3B5;" />
-        </intro-content-container>
+        </content-container>
             
-        <intro-content-container class="mt-48px hidden md:block overflow-hidden">
+        <content-container class="mt-8 hidden md:block overflow-hidden">
             <ul class="flex items-center justify-center mt-1">
-                <li class="mr-14">
+                <li class="mr-11">
                     <h3 class="m-0">
                         <router-link to="/" class="relative inline-block pb-32px">
                             <span v-if="this.$route.path === '/'" class="absolute border-l-3 border-black w-full h-20px bottom-0 left-1/2 transform -translate-1/2" />
@@ -61,7 +60,7 @@
                         </router-link>
                     </h3>
                 </li>
-                <li class="mx-14">
+                <li class="mx-11">
                     <h3 class="m-0">
                         <router-link to="/shop" class="relative inline-block pb-32px">
                             <span v-if="this.$route.path === '/shop'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -69,7 +68,7 @@
                         </router-link>
                     </h3>
                 </li>
-                <li class="mx-14">
+                <li class="mx-11">
                     <h3 class="m-0">
                         <router-link to="/" class="relative inline-block pb-32px">
                             <span v-if="this.$route.path === '/blog'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -77,7 +76,7 @@
                         </router-link>
                     </h3>
                 </li>
-                <li class="ml-14">
+                <li class="ml-11">
                     <h3 class="m-0">
                         <router-link to="/" class="relative inline-block pb-32px">
                             <span v-if="this.$route.path === '/contact'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -86,10 +85,10 @@
                     </h3>
                 </li>
             </ul>
-        </intro-content-container>
+        </content-container>
 
         <div class="w-screen h-screen bg-white absolute left-full top-0 overflow-hidden md:hidden">
-            <intro-content-container>
+            <content-container>
                 <ul class="flex items-center flex-col mt-20 text-white">
                     <li class="mb-16px">
                         <h3 class="m-0">
@@ -124,18 +123,18 @@
                         </h3>
                     </li>
                 </ul>
-            </intro-content-container>
+            </content-container>
         </div>
     </nav>
 </template>
 
 <script>
 import gsap from 'gsap'
-import IntroContentContainer from "./ContainerIntro.vue"
+import ContentContainer from "./Container.vue"
 
 export default {
     components: {
-        IntroContentContainer
+        ContentContainer
     },
     data() {
         return {

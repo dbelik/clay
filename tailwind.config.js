@@ -45,10 +45,10 @@ module.exports = {
       sm: "14px",
       base: "16px",
 
-      "4xl": "52px",
-      "3xl": "39px",
+      "4xl": "48px",
+      "3xl": "34px",
       "2xl": "24px",
-      "xl": "22px",
+      "xl": "20px",
     },
 
     borderColor: {
@@ -92,12 +92,12 @@ module.exports = {
         "58": "14.5rem",
         "70": "17.5rem",
         "48px": "48px",
-        '201px': '201px',
-        '490px': '490px'
+        '180px': '180px',
+        '433px': '433px'
       },
 
       minHeight: {
-        section: "616px"
+        section: "544px"
       },
 
       margin: {

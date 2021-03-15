@@ -1,6 +1,6 @@
 <template>
   <section id="intro-section" class="bg-brown text-white min-h-section flex items-center justify-center">
-    <intro-content-container class="min-h-section flex items-center justify-center md:justify-start text-center md:text-left bg-no-repeat">
+    <content-container class="min-h-section flex items-center justify-center md:justify-start text-center md:text-left bg-no-repeat">
       <div class="max-w-md">
         <h1 class="mt-4">Admire Stylish <br /> Dresses & Looks</h1>
         <p class="leading-7 mb-6">
@@ -10,13 +10,13 @@
         </p>
         <white-border-link to="/">Show More</white-border-link>
       </div>
-    </intro-content-container>
+    </content-container>
   </section>
 
-  <section class="mt-3 mb-8">
-    <intro-content-container class="pt-32px pb-16px flex flex-wrap md:flex-nowrap items-center justify-center">
+  <section class="mt-3 mb-6">
+    <content-container class="pt-32px pb-16px flex flex-wrap md:flex-nowrap items-center justify-center">
       <div 
-        class="w-full sm:w-3/4 md:w-1/2 h-490px mb-20px md:mb-0 md:mr-7 rounded-lg text-white bg-no-repeat bg-center bg-cover px-9 py-11" 
+        class="w-full sm:w-3/4 md:w-1/2 h-433px mb-20px md:mb-0 md:mr-7 rounded-lg text-white bg-no-repeat bg-center bg-cover px-7 py-8" 
         style="background-image: linear-gradient(rgba(52, 52, 52, .004), rgba(52, 52, 52, .4)), url(/img/home/collection.jpg);"
       >
         <h2 class="w-1/3">Women Collection</h2>
@@ -24,14 +24,14 @@
         <white-fill-link to="/">Popular</white-fill-link>
       </div>
 
-      <div class="w-full sm:w-3/4 md:w-1/2 xs:h-490px flex flex-col">
+      <div class="w-full sm:w-3/4 md:w-1/2 xs:h-433px flex flex-col">
         <div class="flex flex-wrap xs:flex-nowrap items-center h-1/2 mb-7 rounded-lg">
-          <div class="bg-grey-200 w-full xs:w-1/2 h-48 xs:h-full mb-7 xs:mb-0 xs:mr-7 rounded-lg p-9 flex flex-col justify-end items-start">
+          <div class="bg-grey-200 w-full xs:w-1/2 h-48 xs:h-full mb-7 xs:mb-0 xs:mr-7 rounded-lg p-7 flex flex-col justify-end items-start">
             <p>24 items</p>
             <h2 class="m-0">Bestsellers</h2>
           </div>
           <div
-            class="w-full xs:w-1/2 h-48 xs:h-full rounded-lg p-9 bg-no-repeat bg-right text-white bg-cover flex flex-col items-start justify-between"
+            class="w-full xs:w-1/2 h-48 xs:h-full rounded-lg p-7 bg-no-repeat bg-right text-white bg-cover flex flex-col items-start justify-between"
             style="background-image: linear-gradient(rgba(52, 52, 52, .004), rgba(52, 52, 52, .4)), url(/img/home/chris-henry.png);"
           >
             <white-fill-link to="/">New</white-fill-link>
@@ -40,72 +40,48 @@
         </div>
         
         <div 
-          class="h-48 xs:h-1/2 bg-pink text-white rounded-lg p-9 bg-no-repeat bg-right bg-contain flex flex-col items-start justify-between m-0" 
+          class="h-48 xs:h-1/2 bg-pink text-white rounded-lg p-7 bg-no-repeat bg-right bg-contain flex flex-col items-start justify-between m-0" 
           style="background-image: linear-gradient(to right, #EDA3B5 49%, rgba(237, 163, 181, 0) 75%), url(/img/home/denim_jackets.png);"
         >
           <white-fill-link to="/">New</white-fill-link>
           <h2 class="mb-0">Denim Jackets</h2>
         </div>
       </div>
-    </intro-content-container>
+    </content-container>
   </section>
 
   <section>
-    <intro-content-container class="my-16px rounded-lg">
+    <content-container class="my-16px rounded-lg">
       <products-slider />
-    </intro-content-container>
+    </content-container>
   </section>
 
   <section>
-    <intro-content-container class="mt-32px">
+    <content-container>
       <h2 class="mb-9 mt-11">You may like</h2>
 
-      <div class="flex items-start justify-center flex-wrap">
-        <card 
-          background="url(/img/home/black_gucci.png)" 
-          price=715
-          title="Women's black vest Gucci"
-          class="md:mr-7 mb-24px"
-          style="width: 24.6rem; height: 38.93rem;"
-        />
-        <card 
-          background="url(/img/home/red_dress.png)" 
-          price=1610
-          title="Red dress Valentino"
-          class="md:mr-7 mb-24px"
-          style="width: 24.9rem; height: 38.93rem;"
-        />
-        <card 
-          background="url(/img/home/shiny_dress.png)" 
-          price=540
-          title="Shiny dress Givenchy"
-          description="A shiny dress in the style of Lady Gaga, for bright events and cool parties…"
-          class="mb-24px"
-          style="width: 25rem; height: 38.93rem;"
-        />
-      </div>
-    </intro-content-container>
+      <cards-slider />
+    </content-container>
   </section>
 </template>
 
 <script>
 import ProductsSlider from '../components/sliders/Products.vue'
+import CardsSlider from '../components/sliders/Cards.vue'
 
-import IntroContentContainer from "../components/common/ContainerIntro.vue"
+import ContentContainer from "../components/common/Container.vue"
 
 import WhiteBorderLink from "../components/links/WhiteBorder.vue"
 import WhiteFillLink from "../components/links/WhiteFill.vue"
 
-import Card from '../components/common/Card.vue'
-
 export default {
   name: 'Home',
   components: {
-    IntroContentContainer,
+    ContentContainer,
     WhiteBorderLink,
     WhiteFillLink,
-    Card,
-    ProductsSlider
+    ProductsSlider,
+    CardsSlider
   }
 }
 </script>
@@ -114,7 +90,7 @@ export default {
   @media (min-width: 768px) {
     #intro-section > div {
       background-image: url(/img/home/lines.svg), url(/img/home/intro.png); 
-      background-size: 70%, 500px; 
+      background-size: 70%, 440px; 
       background-position: 100% bottom, 80% bottom;
     }
   }

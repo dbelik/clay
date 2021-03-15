@@ -1,10 +1,10 @@
 <template>
-    <footer class="bg-white mt-5">
+    <footer class="bg-white mt-3">
         <div class="flex items-center justify-center py-24px border-b border-grey-200">
-            <NavLinks spacing="56" />
+            <NavLinks spacing="44" />
         </div>
 
-        <intro-content-container class="flex flex-wrap justify-center py-48px">
+        <content-container class="flex flex-wrap justify-center pt-36px pb-4">
             <div class="w-full mb-48px lg:mb-0 lg:w-2/5 flex justify-center lg:justify-start">
                 <div class="w-full xs:w-3/5 md:w-2/5 lg:w-4/5 text-center sm:text-left">
                     <div class="flex items-center mb-24px justify-center sm:justify-start">
@@ -47,21 +47,21 @@
                     <li><text-link to="/">Privacy Policy</text-link></li>
                 </ul>
             </div>
-        </intro-content-container>
+        </content-container>
         <div class="bg-grey-200 py-26px">
-            <intro-content-container class="text-grey-600 flex items-center justify-between">
+            <content-container class="text-grey-600 flex items-center justify-between">
                 <p class="m-0">© Clay Shop all rights reserved</p>
                 <ul class="flex">
                     <li><a href="/"><img class="h-icon" src="/img/icons/socials/instagram.svg" alt="Instagram" /></a></li>
                     <li class="mx-24px"><a href="/"><img class="h-icon" src="/img/icons/socials/twitter.svg" alt="Twitter" /></a></li>
                     <li><a href="/"><img class="h-icon" src="/img/icons/socials/facebook.svg" alt="Facebook" /></a></li>
                 </ul>
-            </intro-content-container>
+            </content-container>
         </div>
     </footer>
 </template>
 <script>
-import IntroContentContainer from "./ContainerIntro.vue"
+import ContentContainer from "./Container.vue"
 import NavLinks from "./NavLinks.vue"
 
 import TextLink from "../links/Text.vue"
@@ -69,7 +69,7 @@ import TextLink from "../links/Text.vue"
 export default {
   name: 'Footer',
   components: {
-    IntroContentContainer,
+    ContentContainer,
     TextLink,
     NavLinks
   }
