@@ -203,7 +203,7 @@ export default {
             gsap.to(searchTitle, { marginLeft: "24px", duration: 0, delay: .8 });
             gsap.to(searchTitle, { width: "100%", duration: .4, delay: .8 });
             gsap.to(searchTitle, { height: "100%", duration: 0, delay: .8 });
-            gsap.to(input, { height: "90px", duration: .4, delay: .8 });
+            gsap.to(input, { height: "110px", duration: .4, delay: .8 });
             gsap.to(navlinks, { height: "0", marginTop: "9px", duration: .4, delay: .8 });
             gsap.to(cancel, { display: "block", duration: 0, delay: .8 });
             gsap.to(cancel, { opacity: 1, duration: .4, delay: .8 });
@@ -227,7 +227,7 @@ export default {
             gsap.to(searchTitle, { marginLeft: "0", duration: 0, delay: .4 });
             gsap.to(searchTitle, { height: "0", duration: 0, delay: .4 });
             gsap.to(input, { height: "0", duration: .4 });
-            gsap.to(navlinks, { height: "68px", marginTop: "32px", marginBottom: "0", duration: .4 });
+            gsap.to(navlinks, { height: "88px", marginTop: "32px", marginBottom: "0", duration: .4 });
 
             gsap.to(navlinks, { color: "#1B2437", duration: .2, delay: .8 });
             gsap.to(logo, { width: "11rem", duration: .4, delay: .4 });
