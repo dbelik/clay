@@ -4,7 +4,7 @@
             <button 
                 v-for="item in items.slice(0, 3)" :key="item" 
                 @click="chooseElem" 
-                :class="`inline-block relative rounded-md ml-4 z-20 w-18 h-11 flex items-center justify-center border-2 w-16 w-11 ${
+                :class="`inline-block relative rounded-md ${item !== items[0] ? 'ml-4' : ''} z-20 w-18 h-11 flex items-center justify-center border-2 w-16 w-11 ${
                     !selectedElem && items[0] === item || selectedElem && selectedElem.innerText === item ? 'bg-pink text-white border-pink' : 'bg-transparent border-grey-300'
                 }`" 
             >
@@ -18,7 +18,13 @@
             </button>
         </div>
 
-        <div v-if="active" class="origin-top-left absolute ml-3 mt-1 rounded-md bg-white focus:outline-none overflow-hidden p-1 z-30" role="menu" aria-orientation="vertical" aria-labelledby="options-menu" style="width: calc(100% - 16px); left: -4px;">
+        <div v-if="active" 
+            class="origin-top-left absolute -ml-1 mt-1 rounded-md bg-white focus:outline-none overflow-hidden p-1 z-30" 
+            role="menu" 
+            aria-orientation="vertical" 
+            aria-labelledby="options-menu" 
+            style="left: -4px;"
+        >
             <div class="flex flex-wrap">
                 <button
                     v-for="item in items.slice(3)" 

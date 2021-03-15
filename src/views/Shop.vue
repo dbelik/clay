@@ -1,20 +1,20 @@
 <template>
   <content-container>
     <ul class="flex items-end justify-center pt-24px pb-40px flex-wrap xl:justify-between">
-      <li class="flex flex-col w-42 mb-12px xs:mb-0">
+      <li class="flex flex-col w-42 mb-12px xs:mb-0 mr-4">
         <label class="mb-8px">Show</label>
         <default-dropdown class="w-full" :items="show"></default-dropdown>
       </li>
-      <li class="flex flex-col w-42 mb-12px xs:mb-0">
+      <li class="flex flex-col w-42 mb-12px xs:mb-0 mr-4">
         <label class="mb-8px">Price</label>
         <default-dropdown class="w-full" :items="price"></default-dropdown>
       </li>
-      <li class="flex flex-col w-42 mb-12px xs:mb-0">
+      <li class="flex flex-col w-42 mb-12px xs:mb-0 mr-4">
         <label class="mb-8px">Brand</label>
         <default-dropdown class="w-full" :items="brand"></default-dropdown>
       </li>
-      <li>
-        <div class="flex justify-between pr-8 pl-1 mb-8px ml-4">
+      <li class="mr-4">
+        <div class="flex justify-between pr-8 pl-1 mb-8px">
           <label>Size</label>
           <label><router-link to="/" class="text-pink font-bold">Size Guide</router-link></label>
         </div>
@@ -31,54 +31,60 @@
   </content-container>
 
   <div>
-    <content-container class="flex flex-wrap justify-between">
-      <card 
+    <content-container class="flex flex-wrap justify-center" id="card-group">
+      <card
+        id="card-1"
         background="url(/img/shop/womens_costume.jpg)" 
         price="1 140"
         title="Women's costume Yves Saint Laurent"
         description="Fashion is something we deal with everyday. Even people who say t…"
-        class="m-0 mb-28px"
-        style="width: 22.6rem" />
+        class="card m-0 mb-28px mr-24px"
+        style="max-width: 22.6rem" />
         
-      <card 
+      <card
+        id="card-2"
         background="url(/img/shop/mens_black_hat.png)" 
         price=540
         title="Men’s black hat Gucci"
         description="The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de..."
-        class="m-0 mb-28px"
-        style="width: 22.6rem" />
+        class="card m-0 mb-28px mr-24px"
+        style="max-width: 22.6rem" />
         
-      <card 
+      <card
+        id="card-3"
         background="url(/img/shop/dress_karl.png)" 
         price=640
         title="Dress Karl Lagerfeld"
         description="Another masterpiece from the legendary designer. He designed new dress dev…"
-        class="m-0 mb-28px"
-        style="width: 22.6rem" />
+        class="card m-0 mb-28px"
+        style="max-width: 22.6rem" />
         
-      <card 
+      <card
+        id="card-4"
         background="url(/img/shop/mens_black_tie.jpg)" 
         price=225
         title="Men’s black tie Valentino"
         description="Jacquard Valentino tie with Valentino logo motif."
-        class="m-0 mb-28px"
-        style="width: 22.6rem" />
+        class="card m-0 mb-28px mr-24px"
+        style="max-width: 22.6rem" />
         
-      <card 
+      <card
+        id="card-5"
         background="url(/img/shop/mens_jacket.jpg)" 
         price=215
         title="Men’s jacket Off- white"
         description="Off-White scuffed denim jacket. Faded effect, baggy cut, pointed collar, clasp…"
-        class="m-0 mb-28px"
-        style="width: 22.6rem" />
+        class="card m-0 mb-28px mr-24px"
+        style="max-width: 22.6rem" />
         
-      <card 
+      <card
+        id="card-6"
         background="url(/img/shop/cotton_blouse.jpg)" 
         price=180
         title="Cotton blouse Dries van noten"
         description="The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de..."
-        class="m-0 mb-28px"
-        style="width: 22.6rem" />
+        class="card m-0 mb-28px"
+        style="max-width: 22.6rem" />
     </content-container>
   </div>
 
@@ -144,3 +150,20 @@ export default {
   }
 }
 </script>
+<style>
+  @media(max-width: 1164px) {
+    #card-3 { margin-right: 24px; }
+    #card-4, #card-2 { margin-right: 0px; }
+  }
+  @media(max-width: 779px) {
+    #card-group { 
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      margin: 0px 0px 24px !important;
+    }
+    .card h2 { margin-bottom: 12px; }
+  }
+</style>
