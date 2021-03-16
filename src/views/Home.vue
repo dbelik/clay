@@ -40,8 +40,8 @@
         </div>
         
         <div 
-          class="h-48 xs:h-1/2 bg-pink text-white rounded-lg p-7 bg-no-repeat bg-right bg-contain flex flex-col items-start justify-between m-0" 
-          style="background-image: linear-gradient(to right, #EDA3B5 49%, rgba(237, 163, 181, 0) 75%), url(/img/home/denim_jackets.png);"
+          class="h-48 xs:h-1/2 bg-pink text-white rounded-lg p-7 bg-no-repeat bg-right bg-cover flex flex-col items-start justify-between m-0" 
+          style="background-image: url(/img/home/denim_jackets.png);"
         >
           <white-fill-link to="/">New</white-fill-link>
           <h2 class="mb-0">Denim Jackets</h2>

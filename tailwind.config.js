@@ -30,6 +30,7 @@ module.exports = {
       "grey-700": "#48484A",
       "white": "#ffffff",
       "pink": "#EDA3B5",
+      black: "#1B2437",
 
       "transparent-white": "rgba(255, 255, 255, .2)",
       transparent: "transparent"

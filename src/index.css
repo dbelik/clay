@@ -8,6 +8,14 @@
     background: theme("backgroundColor.pink");
 }
 
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: theme('backgroundColor.black');
+}
+
 body {
     color: theme("textColor.black");
     font-size: theme("fontSize.base");
