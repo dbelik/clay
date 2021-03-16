@@ -102,34 +102,7 @@ module.exports = {
       },
 
       margin: {
-        "8px": "8px",
-        "12px": "12px",
-        "16px": "16px",
-        "20px": "20px",
-        "24px": "24px",
-        "28px": "28px",
-        "30px": "30px",
-        "32px": "32px",
-        "44px": "44px",
-        "48px": "48px",
-        "56px": "56px",
         '30': "7.5rem"
-      },
-
-      padding: {
-        "3px": "3px",
-        "8px": "8px",
-        "11px": "11px",
-        "13px": "13px",
-        "16px": "16px",
-        "22px": "22px",
-        "24px": "24px",
-        "26px": "26px",
-        "30px": "30px",
-        "32px": "32px",
-        "36px": "36px",
-        "40px": "40px",
-        "48px": "48px",
       },
 
       backgroundColor: {

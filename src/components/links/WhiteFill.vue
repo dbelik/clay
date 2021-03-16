@@ -4,7 +4,7 @@
         @mouseleave="interactStop"
         @focusin="interactStart"
         @focusout="interactStop"
-        class="inline-block text-white font-bold rounded-md py-8px px-7 text-sm bg-transparent-white"
+        class="inline-block text-white font-bold rounded-md py-2 px-7 text-sm bg-transparent-white"
         :to="to"
     >
         <slot />

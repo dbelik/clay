@@ -1,19 +1,19 @@
 <template>
     <nav class="fixed top-0 left-0 w-screen bg-white z-50 md:h-180px">
         <content-container 
-            class="flex items-center justify-between md:justify-start py-24px"
+            class="flex items-center justify-between md:justify-start py-6"
             style="max-width: 1340px"
         >
             <div class="flex items-center overflow-hidden whitespace-nowrap w-44">
-                <img width="22" height="22" class="h-icon mr-16px" src="/img/icons/clay.svg" alt="Clay" />
+                <img width="22" height="22" class="h-icon mr-4" src="/img/icons/clay.svg" alt="Clay" />
                 <h3 class="m-0">Clay Shop</h3>
             </div>
             
             <ul class="hidden md:flex items-center justify-center w-4/5 text-xl">
-                <li class="mr-48px flex items-center" style="margin-left: -86px">
+                <li class="mr-12 flex items-center" style="margin-left: -86px">
                     <a href="/" class="block" title="Instagram"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="1x"/></a>
                 </li>
-                <li class="mr-48px flex items-center">
+                <li class="mr-12 flex items-center">
                     <a href="/" class="block" title="Twitter"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="1x"/></a>
                 </li>
                 <li class="flex items-center">
@@ -22,11 +22,11 @@
             </ul>
 
             <ul class="hidden md:flex relative">
-                <li class="mr-16px flex items-center justify-start">
+                <li class="mr-4 flex items-center justify-start">
                     <button title="Search" @click="showSearch" class="flex items-center"><img width="24" height="24" class="h-icon" src="/img/icons/search.svg" alt="Search" /></button>
                     <h3 class="w-0 h-0 overflow-hidden text-black m-0 whitespace-nowrap">Search something</h3>
                 </li>
-                <li class="ml-16px">
+                <li class="ml-4">
                     <router-link to="/"><img width="24" height="24" class="h-icon" src="/img/icons/cart.svg" alt="Cart" /></router-link>
                 </li>
                 <li class="absolute right-0 opacity-0 hidden">
@@ -55,15 +55,15 @@
             <ul class="flex items-center justify-center mt-1">
                 <li class="mr-11">
                     <h3 class="m-0">
-                        <router-link to="/" class="relative inline-block pb-30px">
-                            <span v-if="this.$route.path === '/'" class="absolute border-l-3 border-black w-full h-20px bottom-0 left-1/2 transform -translate-1/2" />
+                        <router-link to="/" class="relative inline-block pb-7">
+                            <span v-if="this.$route.path === '/'" class="absolute border-l-3 border-black w-full h-5 bottom-0 left-1/2 transform -translate-1/2" />
                             Home
                         </router-link>
                     </h3>
                 </li>
                 <li class="mx-11">
                     <h3 class="m-0">
-                        <router-link to="/shop" class="relative inline-block pb-30px">
+                        <router-link to="/shop" class="relative inline-block pb-7">
                             <span v-if="this.$route.path === '/shop'" class="absolute border-t border-black w-full h-1 top-1/2" />
                             Shop
                         </router-link>
@@ -71,7 +71,7 @@
                 </li>
                 <li class="mx-11">
                     <h3 class="m-0">
-                        <router-link to="/" class="relative inline-block pb-30px">
+                        <router-link to="/" class="relative inline-block pb-7">
                             <span v-if="this.$route.path === '/blog'" class="absolute border-t border-black w-full h-1 top-1/2" />
                             Blog
                         </router-link>
@@ -79,7 +79,7 @@
                 </li>
                 <li class="ml-11">
                     <h3 class="m-0">
-                        <router-link to="/" class="relative inline-block pb-30px">
+                        <router-link to="/" class="relative inline-block pb-7">
                             <span v-if="this.$route.path === '/contact'" class="absolute border-t border-black w-full h-1 top-1/2" />
                             Contact
                         </router-link>
@@ -91,7 +91,7 @@
         <div class="w-screen h-screen bg-white absolute left-full top-0 overflow-hidden md:hidden">
             <content-container>
                 <ul class="flex items-center flex-col mt-20 text-white">
-                    <li class="mb-16px">
+                    <li class="mb-4">
                         <h3 class="m-0">
                             <router-link to="/" class="relative">
                                 <span v-if="this.$route.path === '/'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -99,7 +99,7 @@
                             </router-link>
                         </h3>
                     </li>
-                    <li class="mb-16px">
+                    <li class="mb-4">
                         <h3 class="m-0">
                             <router-link to="/shop" class="relative">
                                 <span v-if="this.$route.path === '/shop'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -107,7 +107,7 @@
                             </router-link>
                         </h3>
                     </li>
-                    <li class="mb-16px">
+                    <li class="mb-4">
                         <h3 class="m-0">
                             <router-link to="/" class="relative">
                                 <span v-if="this.$route.path === '/blog'" class="absolute border-t border-black w-full h-1 top-1/2" />

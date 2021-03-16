@@ -5,10 +5,10 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9167 20.1214C16.3711 19.6791 19.8875 16.0481 20.1508 11.5432H11.9167V20.1214ZM21.9868 11.5432H22V11V0L11 9.61647e-07C4.92486 1.49275e-06 -5.31105e-07 4.92486 0 11C5.31105e-07 17.0751 4.92486 22 11 22C16.893 22 21.7036 17.366 21.9868 11.5432ZM11 1.83333C5.93739 1.83333 1.83333 5.93739 1.83333 11C1.83333 15.7532 5.45112 19.6615 10.0833 20.1214V9.70988H20.1667V1.83333H11Z" fill="#1B2437"/>
             </svg>
             
-            <NavLinks spacing="30" class="ml-24 w-full overflow-hidden justify-center hidden md:flex" />
+            <NavLinks spacing="7" class="ml-24 w-full overflow-hidden justify-center hidden md:flex" />
 
             <ul class="flex items-center overflow-hidden w-44 relative hidden md:flex">
-                <li class="mr-16px flex items-center">
+                <li class="mr-4 flex items-center">
                     <button title="Search" @click="showSearch" class="flex items-center">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="9.5" cy="8.5" r="7.5" stroke="#1B2437" stroke-width="2"/>
@@ -17,10 +17,10 @@
                     </button>
                     <h3 class="w-0 h-0 overflow-hidden text-black m-0 whitespace-nowrap">Search something</h3>
                 </li>
-                <li class="mx-16px">
+                <li class="mx-4">
                     <router-link to="/"><img width="24" height="24" class="h-icon" src="/img/icons/user.svg" alt="Profile" /></router-link>
                 </li>
-                <li class="ml-16px">
+                <li class="ml-4">
                     <router-link to="/"><img width="24" height="24" class="h-icon" src="/img/icons/cart.svg" alt="Cart" /></router-link>
                 </li>
                 <li class="absolute right-0 opacity-0 hidden">
@@ -48,7 +48,7 @@
         <div class="w-screen h-screen top-0 bg-white absolute left-full overflow-hidden md:hidden">
             <content-container>
                 <ul class="flex items-center flex-col mt-20 text-white">
-                    <li class="mb-16px">
+                    <li class="mb-4">
                         <h3 class="m-0">
                             <router-link to="/" class="relative">
                                 <span v-if="this.$route.path === '/'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -56,7 +56,7 @@
                             </router-link>
                         </h3>
                     </li>
-                    <li class="mb-16px">
+                    <li class="mb-4">
                         <h3 class="m-0">
                             <router-link to="/shop" class="relative">
                                 <span v-if="this.$route.path === '/shop'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -64,7 +64,7 @@
                             </router-link>
                         </h3>
                     </li>
-                    <li class="mb-16px">
+                    <li class="mb-4">
                         <h3 class="m-0">
                             <router-link to="/" class="relative">
                                 <span v-if="this.$route.path === '/blog'" class="absolute border-t border-black w-full h-1 top-1/2" />

@@ -1,7 +1,7 @@
 <template>
     <div class="relative inline-block text-left">
         <div>
-            <button @click="toggle" type="button" class="inline-flex text-grey-500 justify-between w-full rounded-md border-2 border-gray-300 h-10 flex items-center px-13px text-sm focus:outline-none" >
+            <button @click="toggle" type="button" class="inline-flex text-grey-500 justify-between w-full rounded-md border-2 border-gray-300 h-10 flex items-center px-3 text-sm focus:outline-none" >
                 {{ selectedElem ? selectedElem.innerText : items[0] }}
 
                 <svg class="-mr-1 ml-2 h-5 w-5 relative" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -14,9 +14,9 @@
   </section>
 
   <section class="mt-3 mb-6">
-    <content-container class="pt-32px pb-16px flex flex-wrap md:flex-nowrap items-center justify-center">
+    <content-container class="pt-8 pb-4 flex flex-wrap md:flex-nowrap items-center justify-center">
       <div 
-        class="w-full sm:w-3/4 md:w-1/2 h-433px mb-20px md:mb-0 md:mr-7 rounded-lg text-white bg-no-repeat bg-center bg-cover px-7 py-8" 
+        class="w-full sm:w-3/4 md:w-1/2 h-433px mb-5 md:mb-0 md:mr-7 rounded-lg text-white bg-no-repeat bg-center bg-cover px-7 py-8" 
         style="background-image: linear-gradient(rgba(52, 52, 52, .004), rgba(52, 52, 52, .4)), url(/img/home/collection.jpg);"
       >
         <h2 class="w-1/3">Women Collection</h2>
@@ -51,7 +51,7 @@
   </section>
 
   <section>
-    <content-container class="my-16px rounded-lg">
+    <content-container class="my-4 rounded-lg">
       <products-slider />
     </content-container>
   </section>

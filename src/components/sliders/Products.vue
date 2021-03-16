@@ -4,34 +4,94 @@
       <splide-slide>
         <div class="w-full h-full flex">
           <div class="w-full md:w-1/2 lg:w-1/4 h-full flex flex-col items-center justify-center text-center">
-              <img src="/img/home/slider/slide_1/louis_vouiton.png" alt="Louis Vouiton" />
+              <img class="select-none" src="/img/home/slider/slide_1/louis_vouiton.png" alt="Louis Vouiton" />
               <h4 class="mb-5 mt-7 font-bold">Louis Vouiton</h4>
           </div>
 
           <div class="w-1/2 lg:w-1/4 h-full hidden sm:flex flex-col items-center justify-center text-center">
-              <img src="/img/home/slider/slide_1/dolce&gabbana.png" alt="Dolce&Gabbana" />
+              <img class="select-none" src="/img/home/slider/slide_1/dolce&gabbana.png" alt="Dolce&Gabbana" />
               <h4 class="mb-7 mt-7 font-bold">Dolce&Gabbana</h4>
           </div>
 
           <div class="w-1/4 h-full hidden lg:flex flex-col items-center justify-center text-center">
-              <img src="/img/home/slider/slide_1/gucci.png" alt="Gucci" />
+              <img class="select-none" src="/img/home/slider/slide_1/gucci.png" alt="Gucci" />
               <h4 class="mb-0 mt-11 font-bold">Gucci</h4>
           </div>
 
           <div class="w-1/4 h-full hidden lg:flex flex-col items-center justify-center text-center">
-              <img src="/img/home/slider/slide_1/dries_van_noten.png" alt="Dries van Noten" />
+              <img class="select-none" src="/img/home/slider/slide_1/dries_van_noten.png" alt="Dries van Noten" />
               <h4 class="mb-5 mt-7 font-bold">Dries van Noten</h4>
           </div>
         </div>
       </splide-slide>
       <splide-slide>
-          Slide 2
+        <div class="w-full h-full flex">
+          <div class="w-full md:w-1/2 lg:w-1/4 h-full flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/louis_vouiton.png" alt="Louis Vouiton" />
+              <h4 class="mb-5 mt-7 font-bold">Louis Vouiton</h4>
+          </div>
+
+          <div class="w-1/2 lg:w-1/4 h-full hidden sm:flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/dolce&gabbana.png" alt="Dolce&Gabbana" />
+              <h4 class="mb-7 mt-7 font-bold">Dolce&Gabbana</h4>
+          </div>
+
+          <div class="w-1/4 h-full hidden lg:flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/gucci.png" alt="Gucci" />
+              <h4 class="mb-0 mt-11 font-bold">Gucci</h4>
+          </div>
+
+          <div class="w-1/4 h-full hidden lg:flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/dries_van_noten.png" alt="Dries van Noten" />
+              <h4 class="mb-5 mt-7 font-bold">Dries van Noten</h4>
+          </div>
+        </div>
       </splide-slide>
       <splide-slide>
-          Slide 3
+        <div class="w-full h-full flex">
+          <div class="w-full md:w-1/2 lg:w-1/4 h-full flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/louis_vouiton.png" alt="Louis Vouiton" />
+              <h4 class="mb-5 mt-7 font-bold">Louis Vouiton</h4>
+          </div>
+
+          <div class="w-1/2 lg:w-1/4 h-full hidden sm:flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/dolce&gabbana.png" alt="Dolce&Gabbana" />
+              <h4 class="mb-7 mt-7 font-bold">Dolce&Gabbana</h4>
+          </div>
+
+          <div class="w-1/4 h-full hidden lg:flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/gucci.png" alt="Gucci" />
+              <h4 class="mb-0 mt-11 font-bold">Gucci</h4>
+          </div>
+
+          <div class="w-1/4 h-full hidden lg:flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/dries_van_noten.png" alt="Dries van Noten" />
+              <h4 class="mb-5 mt-7 font-bold">Dries van Noten</h4>
+          </div>
+        </div>
       </splide-slide>
       <splide-slide>
-          Slide 4
+        <div class="w-full h-full flex">
+          <div class="w-full md:w-1/2 lg:w-1/4 h-full flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/louis_vouiton.png" alt="Louis Vouiton" />
+              <h4 class="mb-5 mt-7 font-bold">Louis Vouiton</h4>
+          </div>
+
+          <div class="w-1/2 lg:w-1/4 h-full hidden sm:flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/dolce&gabbana.png" alt="Dolce&Gabbana" />
+              <h4 class="mb-7 mt-7 font-bold">Dolce&Gabbana</h4>
+          </div>
+
+          <div class="w-1/4 h-full hidden lg:flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/gucci.png" alt="Gucci" />
+              <h4 class="mb-0 mt-11 font-bold">Gucci</h4>
+          </div>
+
+          <div class="w-1/4 h-full hidden lg:flex flex-col items-center justify-center text-center">
+              <img class="select-none" src="/img/home/slider/slide_1/dries_van_noten.png" alt="Dries van Noten" />
+              <h4 class="mb-5 mt-7 font-bold">Dries van Noten</h4>
+          </div>
+        </div>
       </splide-slide>
     </splide>
   </div>

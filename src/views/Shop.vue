@@ -1,27 +1,27 @@
 <template>
   <content-container>
-    <ul class="flex items-end justify-center pt-24px pb-40px flex-wrap xl:justify-between">
-      <li class="flex flex-col w-42 mb-12px xs:mb-0 mr-4">
-        <label class="mb-8px">Show</label>
+    <ul class="flex items-end justify-center pt-6 pb-10 flex-wrap xl:justify-between">
+      <li class="flex flex-col w-42 mb-3 xs:mb-0 mr-4">
+        <label class="mb-2">Show</label>
         <default-dropdown class="w-full" :items="show"></default-dropdown>
       </li>
-      <li class="flex flex-col w-42 mb-12px xs:mb-0 mr-4">
-        <label class="mb-8px">Price</label>
+      <li class="flex flex-col w-42 mb-3 xs:mb-0 mr-4">
+        <label class="mb-2">Price</label>
         <default-dropdown class="w-full" :items="price"></default-dropdown>
       </li>
-      <li class="flex flex-col w-42 mb-12px xs:mb-0 mr-4">
-        <label class="mb-8px">Brand</label>
+      <li class="flex flex-col w-42 mb-3 xs:mb-0 mr-4">
+        <label class="mb-2">Brand</label>
         <default-dropdown class="w-full" :items="brand"></default-dropdown>
       </li>
       <li class="mr-4">
-        <div class="flex justify-between pr-8 pl-1 mb-8px">
+        <div class="flex justify-between pr-8 pl-1 mb-2">
           <label>Size</label>
           <label><router-link to="/" class="text-pink font-bold">Size Guide</router-link></label>
         </div>
         <sizes-dropdown :items="sizes" />
       </li>
       <li class="flex flex-col ml-2 mb-1 mt-4 xl:mt-0">
-        <label class="mb-12px">Color</label>
+        <label class="mb-3">Color</label>
         <colors-dropdown :items="colors" />
       </li>
       <li class="ml-12 mb-1 mt-4 xl:mt-0">
@@ -38,7 +38,7 @@
         price="1 140"
         title="Women's costume Yves Saint Laurent"
         description="Fashion is something we deal with everyday. Even people who say t…"
-        class="card m-0 mb-28px mr-24px"
+        class="card m-0 mb-7 mr-6"
         style="max-width: 22.6rem" />
         
       <card
@@ -47,7 +47,7 @@
         price=540
         title="Men’s black hat Gucci"
         description="The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de..."
-        class="card m-0 mb-28px mr-24px"
+        class="card m-0 mb-7 mr-6"
         style="max-width: 22.6rem" />
         
       <card
@@ -56,7 +56,7 @@
         price=640
         title="Dress Karl Lagerfeld"
         description="Another masterpiece from the legendary designer. He designed new dress dev…"
-        class="card m-0 mb-28px"
+        class="card m-0 mb-7"
         style="max-width: 22.6rem" />
         
       <card
@@ -65,7 +65,7 @@
         price=225
         title="Men’s black tie Valentino"
         description="Jacquard Valentino tie with Valentino logo motif."
-        class="card m-0 mb-28px mr-24px"
+        class="card m-0 mb-7 mr-6"
         style="max-width: 22.6rem" />
         
       <card
@@ -74,7 +74,7 @@
         price=215
         title="Men’s jacket Off- white"
         description="Off-White scuffed denim jacket. Faded effect, baggy cut, pointed collar, clasp…"
-        class="card m-0 mb-28px mr-24px"
+        class="card m-0 mb-7 mr-6"
         style="max-width: 22.6rem" />
         
       <card
@@ -83,7 +83,7 @@
         price=180
         title="Cotton blouse Dries van noten"
         description="The fedora hat is reimagined for Pre-Fall 2020 with a maxi embroidered label de..."
-        class="card m-0 mb-28px"
+        class="card m-0 mb-7"
         style="max-width: 22.6rem" />
     </content-container>
   </div>

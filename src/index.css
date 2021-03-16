@@ -35,7 +35,7 @@ h2 { font-size: theme("fontSize.3xl"); margin-bottom: 12px; }
 h3 { font-size: theme("fontSize.2xl"); margin-bottom: 22px; }
 h4 { font-size: theme("fontSize.xl"); margin-bottom: 22px; font-weight: normal; }
 
-p { margin-bottom: theme("margin.16px"); }
+p { margin-bottom: 16px; }
 
 input:focus, button:focus, a:focus { outline: none; }
 button { font-family: "Mulish", sans-serif; }

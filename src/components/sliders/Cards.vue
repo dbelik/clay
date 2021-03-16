@@ -7,7 +7,7 @@
             background="url(/img/home/black_gucci.png)" 
             price=715
             title="Women's black vest Gucci"
-            class="mr-24px mb-28px"
+            class="mr-6 mb-7"
             style="width: 22.6rem; height: 34.7rem;"
             id="card-1"
           />
@@ -15,7 +15,7 @@
             background="url(/img/home/red_dress.png)" 
             price=1610
             title="Red dress Valentino"
-            class="mr-24px mb-28px"
+            class="mr-6 mb-7"
             style="width: 22.6rem; height: 34.7rem;"
             id="card-2"
           />
@@ -24,7 +24,7 @@
             price=540
             title="Shiny dress Givenchy"
             description="A shiny dress in the style of Lady Gaga, for bright events and cool parties…"
-            class="mb-28px"
+            class="mb-7"
             style="width: 22.6rem; height: 34.7rem;"
             id="card-3"
           />
@@ -36,7 +36,7 @@
             background="url(/img/home/black_gucci.png)" 
             price=715
             title="Women's black vest Gucci"
-            class="mr-24px mb-28px"
+            class="mr-6 mb-7"
             style="width: 22.6rem; height: 34.7rem;"
             id="card-1"
           />
@@ -44,7 +44,7 @@
             background="url(/img/home/red_dress.png)" 
             price=1610
             title="Red dress Valentino"
-            class="mr-24px mb-28px"
+            class="mr-6 mb-7"
             style="width: 22.6rem; height: 34.7rem;"
             id="card-2"
           />
@@ -53,7 +53,7 @@
             price=540
             title="Shiny dress Givenchy"
             description="A shiny dress in the style of Lady Gaga, for bright events and cool parties…"
-            class="mb-28px"
+            class="mb-7"
             style="width: 22.6rem; height: 34.7rem;"
             id="card-3"
           />
@@ -65,7 +65,7 @@
             background="url(/img/home/black_gucci.png)" 
             price=715
             title="Women's black vest Gucci"
-            class="mr-24px mb-28px"
+            class="mr-6 mb-7"
             style="width: 22.6rem; height: 34.7rem;"
             id="card-1"
           />
@@ -73,7 +73,7 @@
             background="url(/img/home/red_dress.png)" 
             price=1610
             title="Red dress Valentino"
-            class="mr-24px mb-28px"
+            class="mr-6 mb-7"
             style="width: 22.6rem; height: 34.7rem;"
             id="card-2"
           />
@@ -82,7 +82,7 @@
             price=540
             title="Shiny dress Givenchy"
             description="A shiny dress in the style of Lady Gaga, for bright events and cool parties…"
-            class="mb-28px"
+            class="mb-7"
             style="width: 22.6rem; height: 34.7rem;"
             id="card-3"
           />
@@ -110,7 +110,7 @@ export default {
         height: 560,
         autoplay: true,
         pauseOnHover: true,
-        gap: '24px'
+        gap: '1.5rem'
       }
     }
   },

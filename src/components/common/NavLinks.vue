@@ -1,6 +1,6 @@
 <template>
     <ul class="flex sm:flex-row flex-col text-center sm:text-left">
-        <li :class="`sm:mr-${spacing}px`">
+        <li :class="`sm:mr-${spacing}`">
             <h3 class="m-0">
                 <router-link to="/" class="relative">
                     <span v-if="this.$route.path === '/'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -8,7 +8,7 @@
                 </router-link>
             </h3>
         </li>
-        <li :class="`sm:mx-${spacing}px`">
+        <li :class="`sm:mx-${spacing}`">
             <h3 class="m-0">
                 <router-link to="/shop" class="relative">
                     <span v-if="this.$route.path === '/shop'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -16,7 +16,7 @@
                 </router-link>
             </h3>
         </li>
-        <li :class="`sm:mx-${spacing}px`">
+        <li :class="`sm:mx-${spacing}`">
             <h3 class="m-0">
                 <router-link to="/" class="relative">
                     <span v-if="this.$route.path === '/blog'" class="absolute border-t border-black w-full h-1 top-1/2" />
@@ -24,7 +24,7 @@
                 </router-link>
             </h3>
         </li>
-        <li :class="`sm:ml-${spacing}px`">
+        <li :class="`sm:ml-${spacing}`">
             <h3 class="m-0">
                 <router-link to="/" class="relative">
                     <span v-if="this.$route.path === '/contact'" class="absolute border-t border-black w-full h-1 top-1/2" />

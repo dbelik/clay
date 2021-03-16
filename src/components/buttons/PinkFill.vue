@@ -1,5 +1,5 @@
 <template>
-    <button @mouseenter="interactStart" @focusin="interactStart" @mouseleave="interactStop" @focusout="interactStop" class="inline-block text-white font-bold rounded-md py-8px px-22px text-sm bg-pink" :href="{href}">
+    <button @mouseenter="interactStart" @focusin="interactStart" @mouseleave="interactStop" @focusout="interactStop" class="inline-block text-white font-bold rounded-md py-2 px-5 text-sm bg-pink" :href="{href}">
         <slot />
     </button>
 </template>
