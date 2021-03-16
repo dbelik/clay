@@ -35,7 +35,7 @@
                 <p class="mb-11 text-grey-600">Get updates about style</p>
                 <form class="text-grey-600 flex justify-center sm:justify-start">
                     <default-input type="email" class="w-full pr-16 max-w-xs" placeholder="Type your email..." />
-                    <pink-fill-btn class="-ml-16">
+                    <pink-fill-btn class="-ml-14">
                         <img width="20" height="20" class="h-5" src="/img/icons/arrow.svg" alt="Subscribe" />
                     </pink-fill-btn>
                 </form>
