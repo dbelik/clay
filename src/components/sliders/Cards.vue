@@ -1,6 +1,11 @@
 <template>
   <div class="card-slider">
-    <splide :options="options">
+    <splide 
+      :options="options"
+      @splide:moved="onMoved"
+      @splide:move="onMove"
+      @splide:mounted="onMoved"
+    >
       <splide-slide>
         <div class="flex items-start justify-center flex-wrap">
           <card 
@@ -114,9 +119,36 @@ export default {
       }
     }
   },
-  created() {
-    const prevArrow = document.querySelector('.card-slider .splide__arrow--prev');
-    console.log(prevArrow)
+  methods: {
+    getDots() {
+      const currentDot = document.querySelector(".card-slider .splide__pagination__page.is-active");
+
+      const nextFirstDot = currentDot?.parentNode.nextSibling?.children[0];
+      const nextSecondDot = nextFirstDot?.parentNode.nextSibling?.children[0];
+      const prevFirstDot = currentDot?.parentNode.previousSibling?.children[0];
+      const prevSecondDot = prevFirstDot?.parentNode.previousSibling?.children[0];
+
+      return {
+        nextFirstDot,
+        nextSecondDot,
+        prevFirstDot,
+        prevSecondDot,
+      }
+    },
+    onMoved() {
+      const { nextFirstDot, nextSecondDot, prevFirstDot, prevSecondDot, } = this.getDots();
+      nextFirstDot?.classList.add('next_first_item');
+      nextSecondDot?.classList.add('next_second_item');
+      prevFirstDot?.classList.add('prev_first_item');
+      prevSecondDot?.classList.add('prev_second_item');
+    },
+    onMove() {
+      const { nextFirstDot, nextSecondDot, prevFirstDot, prevSecondDot, } = this.getDots();
+      nextFirstDot?.classList.remove('next_first_item');
+      nextSecondDot?.classList.remove('next_second_item');
+      prevFirstDot?.classList.remove('prev_first_item');
+      prevSecondDot?.classList.remove('prev_second_item');
+    }
   }
 }
 </script>
@@ -176,7 +208,7 @@ export default {
     width: 9px;
     height: 9px;
     background: #1B2437;
-    opacity: .6;
+    opacity: .2;
     margin: 0px 6px;
     position: relative;
   }
@@ -210,5 +242,16 @@ export default {
   @media (max-width: 780px) {
     .card-slider #card-2 { display: none; }
     .card-slider #card-1 { margin-right: 0px; }
+  }
+
+  
+  .card-slider .splide__pagination__page.prev_first_item,
+  .card-slider .splide__pagination__page.next_first_item { 
+    opacity: .6; 
+  }
+
+  .card-slider .splide__pagination__page.prev_second_item,
+  .card-slider .splide__pagination__page.next_second_item { 
+    opacity: .4; 
   }
 </style>
