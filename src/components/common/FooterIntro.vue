@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-white mt-3">
+    <footer class="bg-white mt-8">
         <div class="flex items-center justify-center py-24px border-b border-grey-200">
             <NavLinks spacing="44" />
         </div>

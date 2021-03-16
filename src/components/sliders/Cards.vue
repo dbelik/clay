@@ -1,5 +1,8 @@
-<template lang="">
-      <div class="flex items-start justify-center flex-wrap">
+<template>
+  <div class="card-slider">
+    <splide :options="options">
+      <splide-slide>
+        <div class="flex items-start justify-center flex-wrap">
           <card 
             background="url(/img/home/black_gucci.png)" 
             price=715
@@ -22,13 +25,27 @@
             class="mb-28px"
             style="width: 22.6rem; height: 34.7rem;"
           />
-      </div>
+        </div>
+      </splide-slide>
+
+      <splide-slide>
+        Slide 2
+      </splide-slide>
+      <splide-slide>
+        Slide 3
+      </splide-slide>
+    </splide>
+  </div>
 </template>
 <script>
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
 import Card from '../common/Card.vue'
 
 export default {
   components: {
+    Splide,
+    SplideSlide,
     Card,
   },
   data() {
@@ -37,11 +54,92 @@ export default {
         rewind : true,
         width : 1480,
         height: 560,
+        autoplay: true,
+        pauseOnHover: true,
       }
     }
   }
 }
 </script>
+
+<!-- NOTE: Scoped styles cannot be used with dynamic content, so use global styles instead. -->
 <style>
-    
+  .card-slider .splide__pagination {
+    top: -62px;
+    transform: unset;
+    bottom: unset;
+    right: 48px;
+    left: unset;
+    width: auto;
+  }
+
+  .card-slider .splide__arrows {
+    display: flex;
+  }
+
+  .card-slider .splide__arrow {
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    top: -32px;
+  }
+
+  .card-slider .splide__arrow--next {
+    top: -58px;
+    right: 0px;
+  }
+
+  .card-slider .splide__arrow--prev {
+    top: -58px;
+    right: 125px;
+    left: unset;
+  }
+
+  .card-slider .splide__arrow svg {
+    fill: #D1D1D6;
+    width: 20px;
+  }
+
+  .card-slider .splide__arrow svg:hover, .splide__arrow svg:focus {
+    fill: #D1D1D6;
+  }
+
+  .card-slider .splide__pagination > li {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-slider .splide__pagination__page {
+    width: 9px;
+    height: 9px;
+    background: #1B2437;
+    opacity: .6;
+    margin: 0px 6px;
+    position: relative;
+  }
+
+  .card-slider .splide__pagination__page:focus, .splide__pagination__page:hover {
+    background: #1B2437;
+    opacity: 1;
+  }
+
+  .card-slider .splide__pagination__page.is-active {
+    background: #1B2437;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .card-slider .splide__pagination__page.is-active::after {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(27, 36, 55, .4);
+    border-radius: 50%;
+  }
 </style>

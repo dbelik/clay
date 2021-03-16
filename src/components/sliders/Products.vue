@@ -1,7 +1,8 @@
 <template>
-  <splide :options="options">
-    <splide-slide>
-      <div class="w-full h-full flex">
+  <div class="products-slider">
+    <splide :options="options">
+      <splide-slide>
+        <div class="w-full h-full flex">
           <div class="w-full md:w-1/2 lg:w-1/4 h-full flex flex-col items-center justify-center text-center">
               <img src="/img/home/slider/slide_1/louis_vouiton.png" alt="Louis Vouiton" />
               <h4 class="mb-5 mt-7 font-bold">Louis Vouiton</h4>
@@ -21,18 +22,19 @@
               <img src="/img/home/slider/slide_1/dries_van_noten.png" alt="Dries van Noten" />
               <h4 class="mb-5 mt-7 font-bold">Dries van Noten</h4>
           </div>
-      </div>
-    </splide-slide>
-    <splide-slide>
-        Slide 2
-    </splide-slide>
-    <splide-slide>
-        Slide 3
-    </splide-slide>
-    <splide-slide>
-        Slide 4
-    </splide-slide>
-  </splide>
+        </div>
+      </splide-slide>
+      <splide-slide>
+          Slide 2
+      </splide-slide>
+      <splide-slide>
+          Slide 3
+      </splide-slide>
+      <splide-slide>
+          Slide 4
+      </splide-slide>
+    </splide>
+  </div>
 </template>
 <script>
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
@@ -45,57 +47,60 @@ export default {
   },
   data() {
     return {
-        options: {
-          rewind : true,
-          width : 1480,
-          height: 316,
-        },
+      options: {
+        rewind : true,
+        width : 1480,
+        height: 316,
+        autoplay: true,
+        pauseOnHover: true,
+      },
     }
   }
 }
 </script>
 
+<!-- NOTE: Scoped styles cannot be used with dynamic content, so use global styles instead. -->
 <style>
-  .splide {
+  .products-slider .splide {
     background-color: white;
     border-radius: 16px;
   }
 
-  .splide__arrow svg {
+  .products-slider .splide__arrow svg {
     fill: #D1D1D6;
     width: 20px;
   }
 
-  .splide__arrow svg:hover, .splide__arrow svg:focus {
+  .products-slider .splide__arrow svg:hover, .splide__arrow svg:focus {
     fill: #D1D1D6;
   }
 
-  .splide__arrow--prev {
+  .products-slider .splide__arrow--prev {
     left: 3rem;
     top: 44%;
   }
 
-  .splide__arrow--next {
+  .products-slider .splide__arrow--next {
     right: 3rem;
     top: 44%;
   }
 
-  .splide__pagination {
+  .products-slider .splide__pagination {
     margin-bottom: 23px;
   }
 
   @media(min-width: 480px) {
-    .splide__slide {
+    .products-slider .splide__slide {
       padding: 0px 90px;
     }
   }
 
-  .splide__pagination > li {
+  .products-slider .splide__pagination > li {
     display: flex;
     align-items: center;
   }
 
-  .splide__pagination__page {
+  .products-slider .splide__pagination__page {
     width: 9px;
     height: 9px;
     background: #1B2437;
@@ -104,18 +109,18 @@ export default {
     position: relative;
   }
 
-  .splide__pagination__page:focus, .splide__pagination__page:hover {
+  .products-slider .splide__pagination__page:focus, .splide__pagination__page:hover {
     background: #1B2437;
     opacity: 1;
   }
 
-  .splide__pagination__page.is-active {
+  .products-slider .splide__pagination__page.is-active {
     background: #1B2437;
     opacity: 1;
     transform: scale(1);
   }
 
-  .splide__pagination__page.is-active::after {
+  .products-slider .splide__pagination__page.is-active::after {
     content: '';
     width: 200%;
     height: 200%;
