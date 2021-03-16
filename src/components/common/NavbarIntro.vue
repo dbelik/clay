@@ -5,32 +5,32 @@
             style="max-width: 1340px"
         >
             <div class="flex items-center overflow-hidden whitespace-nowrap w-44">
-                <img class="h-icon mr-16px" src="/img/icons/clay.svg" alt="Clay" />
+                <img width="22" height="22" class="h-icon mr-16px" src="/img/icons/clay.svg" alt="Clay" />
                 <h3 class="m-0">Clay Shop</h3>
             </div>
             
             <ul class="hidden md:flex items-center justify-center w-4/5 text-xl">
                 <li class="mr-48px flex items-center" style="margin-left: -86px">
-                    <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="1x"/>
+                    <a href="/" class="block" title="Instagram"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="1x"/></a>
                 </li>
                 <li class="mr-48px flex items-center">
-                    <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="1x"/>
+                    <a href="/" class="block" title="Twitter"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="1x"/></a>
                 </li>
                 <li class="flex items-center">
-                    <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="1x"/>
+                    <a href="/" class="block" title="Facebook"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="1x"/></a>
                 </li>
             </ul>
 
             <ul class="hidden md:flex relative">
                 <li class="mr-16px flex items-center justify-start">
-                    <button @click="showSearch" class="flex items-center"><img class="h-icon" src="/img/icons/search.svg" alt="Search" /></button>
+                    <button title="Search" @click="showSearch" class="flex items-center"><img width="24" height="24" class="h-icon" src="/img/icons/search.svg" alt="Search" /></button>
                     <h3 class="w-0 h-0 overflow-hidden text-black m-0 whitespace-nowrap">Search something</h3>
                 </li>
                 <li class="ml-16px">
-                    <router-link to="/"><img class="h-icon" src="/img/icons/cart.svg" alt="Cart" /></router-link>
+                    <router-link to="/"><img width="24" height="24" class="h-icon" src="/img/icons/cart.svg" alt="Cart" /></router-link>
                 </li>
                 <li class="absolute right-0 opacity-0 hidden">
-                    <button @click="closeSearch">
+                    <button title="Close search" @click="closeSearch">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.34314 6.34314L17.6568 17.6568" stroke="#EDA3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M17.6568 6.34314L6.34314 17.6568" stroke="#EDA3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -39,7 +39,7 @@
                 </li>
             </ul>
 
-            <button class="md:hidden h-10 w-10 flex items-center justify-center z-40" @click="toggle">
+            <button title="Open menu" class="md:hidden h-10 w-10 flex items-center justify-center z-40" @click="toggle">
                 <svg class="w-8 h-8" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="3" x2="25" y2="3" stroke="#1B2437" stroke-width="2"/>
                     <line y1="9" x2="25" y2="9" stroke="#1B2437" stroke-width="2"/>

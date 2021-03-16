@@ -8,7 +8,7 @@
             <div class="w-full mb-48px lg:mb-0 lg:w-2/5 flex justify-center lg:justify-start">
                 <div class="w-full xs:w-3/5 md:w-2/5 lg:w-4/5 text-center sm:text-left">
                     <div class="flex items-center mb-24px justify-center sm:justify-start">
-                        <img class="h-icon mr-16px" src="/img/icons/clay.svg" alt="Clay" />
+                        <img width="22" height="22" class="h-icon mr-16px" src="/img/icons/clay.svg" alt="Clay" />
                         <h3 class="m-0">Clay Shop</h3>
                     </div>
                     <p class="text-grey-600 w-full m-0">
@@ -52,9 +52,9 @@
             <content-container class="text-grey-600 flex items-center justify-between">
                 <p class="m-0">© Clay Shop all rights reserved</p>
                 <ul class="flex">
-                    <li><a href="/"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="1x" :style="{ color: '#1B2437' }"/></a></li>
-                    <li class="mx-12"><a href="/"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="1x" :style="{ color: '#1B2437' }"/></a></li>
-                    <li><a href="/"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="1x" :style="{ color: '#1B2437' }"/></a></li>
+                    <li><a href="/" title="Instagram"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="1x" :style="{ color: '#1B2437' }"/></a></li>
+                    <li class="mx-12"><a href="/" title="Twitter"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="1x" :style="{ color: '#1B2437' }"/></a></li>
+                    <li><a href="/" title="Facebook"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="1x" :style="{ color: '#1B2437' }"/></a></li>
                 </ul>
             </content-container>
         </div>

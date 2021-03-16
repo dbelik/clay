@@ -89,7 +89,7 @@
   </div>
 
   <content-container class="flex items-center justify-center sm:justify-between" style="margin-top: 17px">
-    <shift-background-link class="h-8 w-8 hidden sm:block" backgroundImage="url(/img/shop/arrow-left.svg);" to="/" positionStart="-32px 0px" positionStop="0px 0px"></shift-background-link>
+    <shift-background-link title="Previous page" class="h-8 w-8 hidden sm:block" backgroundImage="url(/img/shop/arrow-left.svg);" to="/" positionStart="-32px 0px" positionStop="0px 0px"></shift-background-link>
     <ul class="flex items-center justify-center">
       <li><pink-fill-interact-link to="/">1</pink-fill-interact-link></li>
       <li class="hidden md:block"><pink-fill-interact-link to="/">2</pink-fill-interact-link></li>
@@ -110,7 +110,7 @@
       <li class="text-xl">...</li>
       <li><pink-fill-interact-link to="/">231</pink-fill-interact-link></li>
     </ul>
-    <shift-background-link class="h-8 w-8 hidden sm:block" backgroundImage="url(/img/shop/arrow-right.svg);" to="/" positionStart="32px 0px" positionStop="0px 0px"></shift-background-link>
+    <shift-background-link title="Next page" class="h-8 w-8 hidden sm:block" backgroundImage="url(/img/shop/arrow-right.svg);" to="/" positionStart="32px 0px" positionStop="0px 0px"></shift-background-link>
   </content-container>
 </template>
 

@@ -11,7 +11,7 @@
                 {{ item }}
             </button>
 
-            <button @click="toggle">
+            <button @click="toggle" title="Expand/Shrink">
                 <svg class="-mr-1 ml-4 h-5 w-5 relative" width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1.39673L9 9.39673L17 1.39673" stroke="#D1D1D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>

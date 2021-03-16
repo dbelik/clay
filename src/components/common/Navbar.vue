@@ -9,7 +9,7 @@
 
             <ul class="flex items-center overflow-hidden w-44 relative hidden md:flex">
                 <li class="mr-16px flex items-center">
-                    <button @click="showSearch" class="flex items-center">
+                    <button title="Search" @click="showSearch" class="flex items-center">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="9.5" cy="8.5" r="7.5" stroke="#1B2437" stroke-width="2"/>
                             <path d="M15 15L22 22" stroke="#1B2437" stroke-width="2" stroke-linecap="round"/>
@@ -18,13 +18,13 @@
                     <h3 class="w-0 h-0 overflow-hidden text-black m-0 whitespace-nowrap">Search something</h3>
                 </li>
                 <li class="mx-16px">
-                    <router-link to="/"><img class="h-icon" src="/img/icons/user.svg" alt="Profile" /></router-link>
+                    <router-link to="/"><img width="24" height="24" class="h-icon" src="/img/icons/user.svg" alt="Profile" /></router-link>
                 </li>
                 <li class="ml-16px">
-                    <router-link to="/"><img class="h-icon" src="/img/icons/cart.svg" alt="Cart" /></router-link>
+                    <router-link to="/"><img width="24" height="24" class="h-icon" src="/img/icons/cart.svg" alt="Cart" /></router-link>
                 </li>
                 <li class="absolute right-0 opacity-0 hidden">
-                    <button @click="closeSearch">
+                    <button title="Close search" @click="closeSearch">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.34314 6.34314L17.6568 17.6568" stroke="#EDA3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M17.6568 6.34314L6.34314 17.6568" stroke="#EDA3B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

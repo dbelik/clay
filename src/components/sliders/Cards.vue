@@ -7,15 +7,17 @@
             background="url(/img/home/black_gucci.png)" 
             price=715
             title="Women's black vest Gucci"
-            class="md:mr-24px mb-28px"
+            class="mr-24px mb-28px"
             style="width: 22.6rem; height: 34.7rem;"
+            id="card-1"
           />
           <card 
             background="url(/img/home/red_dress.png)" 
             price=1610
             title="Red dress Valentino"
-            class="md:mr-24px mb-28px"
+            class="mr-24px mb-28px"
             style="width: 22.6rem; height: 34.7rem;"
+            id="card-2"
           />
           <card 
             background="url(/img/home/shiny_dress.png)" 
@@ -24,6 +26,7 @@
             description="A shiny dress in the style of Lady Gaga, for bright events and cool parties…"
             class="mb-28px"
             style="width: 22.6rem; height: 34.7rem;"
+            id="card-3"
           />
         </div>
       </splide-slide>
@@ -58,6 +61,10 @@ export default {
         pauseOnHover: true,
       }
     }
+  },
+  created() {
+    const prevArrow = document.querySelector('.card-slider .splide__arrow--prev');
+    console.log(prevArrow)
   }
 }
 </script>
@@ -141,5 +148,15 @@ export default {
     transform: translate(-50%, -50%);
     border: 1px solid rgba(27, 36, 55, .4);
     border-radius: 50%;
+  }
+
+  @media (max-width: 1164px) {
+    .card-slider #card-3 { display: none; }
+    .card-slider #card-2 { margin-right: 0px; }
+  }
+
+  @media (max-width: 780px) {
+    .card-slider #card-2 { display: none; }
+    .card-slider #card-1 { margin-right: 0px; }
   }
 </style>

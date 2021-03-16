@@ -36,7 +36,7 @@
                 <form class="text-grey-600 flex justify-center sm:justify-start">
                     <default-input type="email" class="w-full pr-16 max-w-xs" placeholder="Type your email..." />
                     <pink-fill-btn class="-ml-16">
-                        <img class="h-20px" src="/img/icons/arrow.svg" alt="Subscribe" />
+                        <img width="20" height="20" class="h-20px" src="/img/icons/arrow.svg" alt="Subscribe" />
                     </pink-fill-btn>
                 </form>
             </div>
@@ -45,9 +45,9 @@
             <content-container class="text-grey-600 flex items-center justify-between">
                 <p class="m-0">© Clay Shop all rights reserved</p>
                 <ul class="flex">
-                    <li><a href="/"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="1x" :style="{ color: '#1B2437' }" /></a></li>
-                    <li class="mx-12"><a href="/"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="1x" :style="{ color: '#1B2437' }" /></a></li>
-                    <li><a href="/"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="1x" :style="{ color: '#1B2437' }" /></a></li>
+                    <li><a href="/" title="Instagram"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="1x" :style="{ color: '#1B2437' }" /></a></li>
+                    <li class="mx-12"><a href="/" title="Twitter"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="1x" :style="{ color: '#1B2437' }" /></a></li>
+                    <li><a href="/" title="Facebook"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="1x" :style="{ color: '#1B2437' }" /></a></li>
                 </ul>
             </content-container>
         </div>
