@@ -9,15 +9,15 @@
                 <h3 class="m-0">Clay Shop</h3>
             </div>
             
-            <ul class="hidden md:flex items-center justify-center w-4/5">
+            <ul class="hidden md:flex items-center justify-center w-4/5 text-xl">
                 <li class="mr-48px flex items-center" style="margin-left: -86px">
-                    <a class="inline-block" href="/"><img src="/img/icons/socials/instagram.svg" alt="Instagram" /></a>
+                    <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'instagram' }" size="1x"/>
                 </li>
                 <li class="mr-48px flex items-center">
-                    <a class="inline-block" href="/"><img src="/img/icons/socials/twitter.svg" alt="Twitter" /></a>
+                    <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" size="1x"/>
                 </li>
                 <li class="flex items-center">
-                    <a class="inline-block" href="/"><img src="/img/icons/socials/facebook.svg" alt="Facebook" /></a>
+                    <font-awesome-icon :icon="{ prefix: 'fab', iconName: 'facebook-f' }" size="1x"/>
                 </li>
             </ul>
 
