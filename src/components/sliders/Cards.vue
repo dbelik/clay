@@ -30,12 +30,63 @@
           />
         </div>
       </splide-slide>
-
       <splide-slide>
-        Slide 2
+        <div class="flex items-start justify-center flex-wrap">
+          <card 
+            background="url(/img/home/black_gucci.png)" 
+            price=715
+            title="Women's black vest Gucci"
+            class="mr-24px mb-28px"
+            style="width: 22.6rem; height: 34.7rem;"
+            id="card-1"
+          />
+          <card 
+            background="url(/img/home/red_dress.png)" 
+            price=1610
+            title="Red dress Valentino"
+            class="mr-24px mb-28px"
+            style="width: 22.6rem; height: 34.7rem;"
+            id="card-2"
+          />
+          <card 
+            background="url(/img/home/shiny_dress.png)" 
+            price=540
+            title="Shiny dress Givenchy"
+            description="A shiny dress in the style of Lady Gaga, for bright events and cool parties…"
+            class="mb-28px"
+            style="width: 22.6rem; height: 34.7rem;"
+            id="card-3"
+          />
+        </div>
       </splide-slide>
       <splide-slide>
-        Slide 3
+        <div class="flex items-start justify-center flex-wrap">
+          <card 
+            background="url(/img/home/black_gucci.png)" 
+            price=715
+            title="Women's black vest Gucci"
+            class="mr-24px mb-28px"
+            style="width: 22.6rem; height: 34.7rem;"
+            id="card-1"
+          />
+          <card 
+            background="url(/img/home/red_dress.png)" 
+            price=1610
+            title="Red dress Valentino"
+            class="mr-24px mb-28px"
+            style="width: 22.6rem; height: 34.7rem;"
+            id="card-2"
+          />
+          <card 
+            background="url(/img/home/shiny_dress.png)" 
+            price=540
+            title="Shiny dress Givenchy"
+            description="A shiny dress in the style of Lady Gaga, for bright events and cool parties…"
+            class="mb-28px"
+            style="width: 22.6rem; height: 34.7rem;"
+            id="card-3"
+          />
+        </div>
       </splide-slide>
     </splide>
   </div>
@@ -59,6 +110,7 @@ export default {
         height: 560,
         autoplay: true,
         pauseOnHover: true,
+        gap: '24px'
       }
     }
   },
